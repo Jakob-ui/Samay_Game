@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
         {
-            inputMagnitude /= 2;
+            inputMagnitude += 0.5f;
         }
 
         //animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
