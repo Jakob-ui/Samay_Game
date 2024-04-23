@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField]
     private float maximumSpeed;
 
@@ -17,14 +18,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Transform cameraTransform;
 
-    //private Animator animator;
+    public static bool timestop = false;
+
+    [Header("private Animator animator")]
     private CharacterController characterController;
     private float ySpeed;
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
 
-    // Start is called before the first frame update
+
+    [SerializeField] private Collider wasser;
+
     void Start()
     {
         //animator = GetComponent<Animator>();
@@ -32,7 +37,6 @@ public class PlayerMovement : MonoBehaviour
         originalStepOffset = characterController.stepOffset;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -92,6 +96,15 @@ public class PlayerMovement : MonoBehaviour
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
+
+        //Timestop
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            if(timestop == false){
+                wasser.enabled = !wasser.enabled;
+                timestop =! timestop;
+            }else wasser.enabled = !wasser.enabled;
+        } 
     }
 
     private void OnApplicationFocus(bool focus)
