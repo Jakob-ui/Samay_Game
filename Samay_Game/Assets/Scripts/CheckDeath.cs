@@ -16,7 +16,6 @@ public class CheckDeath : MonoBehaviour
     {
         if(player.transform.position.y <= -1.5){
             player.transform.position = PlayerPosition;
-            Debug.Log("tot");
         }
     }
 }

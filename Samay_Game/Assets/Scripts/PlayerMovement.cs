@@ -20,14 +20,14 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool timestop = false;
 
-    [Header("private Animator animator")]
+    [Header("Character Movement")]
     private CharacterController characterController;
     private float ySpeed;
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
 
-
+    [Header("Everything else")]
     [SerializeField] private Collider wasser;
 
     void Start()
