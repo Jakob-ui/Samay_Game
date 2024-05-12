@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Everything else")]
     [SerializeField] private Collider wasser;
+    [SerializeField] private Material timeeffect;
+
 
     void Start()
     {
@@ -103,7 +105,12 @@ public class PlayerMovement : MonoBehaviour
             if(timestop == false){
                 wasser.enabled = !wasser.enabled;
                 timestop =! timestop;
-            }else wasser.enabled = !wasser.enabled;
+                timeeffect.SetFloat("_Fullscreenintesity", 0.1f);
+                Debug.Log(timestop);
+            }else{
+                timeeffect.SetFloat("_Fullscreenintesity", 0f);
+                wasser.enabled = !wasser.enabled;
+            } 
         } 
     }
 
