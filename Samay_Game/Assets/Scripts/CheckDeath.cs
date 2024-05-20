@@ -11,11 +11,6 @@ public class CheckDeath : MonoBehaviour
 
     void Start()
     {
-        if (player == null)
-        {
-            Debug.LogError("Player CharacterController is not assigned!");
-            return;
-        }
         playerStartPosition = transform.position;
     }
 
@@ -26,7 +21,6 @@ public class CheckDeath : MonoBehaviour
         if (transform.position.y <= 6)
         {
             isDead = true;
-            Debug.Log("Player is dead due to falling.");
         }
 
         if (isDead)
@@ -44,7 +38,6 @@ public class CheckDeath : MonoBehaviour
         if (other.gameObject.CompareTag("Pendulum"))
         {
             isDead = true;
-            Debug.Log("Player is dead due to collision with Pendulum.");
         }
     }
 }
