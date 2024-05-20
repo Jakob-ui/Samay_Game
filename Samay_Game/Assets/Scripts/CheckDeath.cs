@@ -4,18 +4,44 @@ using UnityEngine;
 
 public class CheckDeath : MonoBehaviour
 {
+    [SerializeField] private CharacterController player;
+    private Vector3 playerStartPosition;
 
-    [SerializeField] private GameObject player;
-    Vector3 PlayerPosition;
+    private bool isDead = false;
+
     void Start()
     {
-        PlayerPosition = player.transform.position;
+        playerStartPosition = transform.position;
     }
 
     void Update()
     {
-        if(player.transform.position.y <= -1.5){
-            player.transform.position = PlayerPosition;
+        if (player == null) return;
+
+        if (transform.position.y <= 6)
+        {
+            isDead = true;
+        }
+
+        if (isDead)
+        {
+            player.enabled = false;
+            transform.position = playerStartPosition;
+            player.enabled = true;
+
+            isDead = false;
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isDead = true;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pendulum"))
+        {
+            isDead = true;
         }
     }
 }

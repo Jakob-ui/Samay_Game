@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8734702702077287395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2817154371441973623}
+  - component: {fileID: 164776405362101436}
+  m_Layer: 0
+  m_Name: Pendulum
+  m_TagString: Pendulum
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2817154371441973623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8734702702077287395}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 89.78, y: 83.26, z: 157.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1760914622443947386}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &164776405362101436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8734702702077287395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb385caad95b4114b95f5ce328bb7176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 25
+  limit: 100
+  offset: 0
+--- !u!1001 &1049066912081676216
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2817154371441973623}
+    m_Modifications:
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.989998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -44.300003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.44000244
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140580793945086072, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_Name
+      value: Pendulum Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140580793945086072, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_TagString
+      value: Pendulum
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666673757309012298, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_TagString
+      value: Pendulum
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817560506757346977, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_TagString
+      value: Pendulum
+      objectReference: {fileID: 0}
+    - target: {fileID: 8861753723223962397, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      propertyPath: m_TagString
+      value: Pendulum
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8861753723223962397, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4648936257003371479}
+  m_SourcePrefab: {fileID: 100100000, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+--- !u!4 &1760914622443947386 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1657058892824085186, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+  m_PrefabInstance: {fileID: 1049066912081676216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8391418605794555045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8861753723223962397, guid: 8163f7e6be841444a8743c6328bd0798, type: 3}
+  m_PrefabInstance: {fileID: 1049066912081676216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &4648936257003371479
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391418605794555045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6329158148709259305, guid: ae6a8d7e3782cbc4291b45eab501f6b9, type: 3}
