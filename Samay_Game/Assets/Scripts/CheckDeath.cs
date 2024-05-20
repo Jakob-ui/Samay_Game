@@ -31,6 +31,10 @@ public class CheckDeath : MonoBehaviour
 
             isDead = false;
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            isDead = true;
+        }
     }
 
     void OnTriggerEnter(Collider other)
