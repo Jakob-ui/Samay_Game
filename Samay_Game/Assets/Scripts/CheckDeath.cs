@@ -4,27 +4,38 @@ using UnityEngine;
 
 public class CheckDeath : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    [SerializeField] private CharacterController player;
     private Vector3 playerStartPosition;
+
+    private bool isDead = false;
 
     void Start()
     {
         if (player == null)
         {
-            Debug.LogError("Player GameObject is not assigned!");
+            Debug.LogError("Player CharacterController is not assigned!");
             return;
         }
-        playerStartPosition = player.transform.position;
+        playerStartPosition = transform.position;
     }
 
     void Update()
     {
         if (player == null) return;
 
-        if (player.transform.position.y <= 7)
+        if (transform.position.y <= 6)
         {
-            player.transform.position = playerStartPosition;
+            isDead = true;
             Debug.Log("Player is dead due to falling.");
+        }
+
+        if (isDead)
+        {
+            player.enabled = false;
+            transform.position = playerStartPosition;
+            player.enabled = true;
+
+            isDead = false;
         }
     }
 
@@ -32,8 +43,8 @@ public class CheckDeath : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Pendulum"))
         {
+            isDead = true;
             Debug.Log("Player is dead due to collision with Pendulum.");
-            player.transform.position = playerStartPosition;
         }
     }
 }

@@ -7,45 +7,28 @@ public class Pendulum : MonoBehaviour
     [Header("Pendulum")]
     [SerializeField] private float speed = 1.5f;
     [SerializeField] private float limit = 75f;
-    [SerializeField] private float offset = 0;
+    [SerializeField] private float offset = 0f;
 
-    private bool isPaused = false;
-    private float pausedTime = 0f;
-    private float pausedAngle = 0f;
+    private float rotationZ = 0f;
+    private float rotationFactor = 1;
+
+    void Start()
+    {
+        rotationZ = offset;
+    }
 
     void Update()
     {
-
         if (TimeStopControll.activated)
         {
-            if (!isPaused)
-            {
-                float timeSincePause = isPaused ? Time.time - pausedTime : 0f;
-                float angle = limit * Mathf.Sin((Time.time + offset - timeSincePause) * speed + pausedAngle);
-                transform.localRotation = Quaternion.Euler(0, 0, angle);
-            }
-        }
-        else
-        {
-            if (!isPaused)
-            {
-                pausedTime = Time.time;
-                pausedAngle = GetCurrentAngle();
-                isPaused = true;
-            }
-        }
+            if (rotationZ > limit)
+                rotationFactor = -1;
+            else if (rotationZ < 0)
+                rotationFactor = 1;
 
-        if (!TimeStopControll.activated && isPaused)
-        {
-            isPaused = false;
+            rotationZ += rotationFactor * speed * Time.deltaTime;
+
+            transform.localRotation = Quaternion.Euler(0f, 0f, rotationZ - (limit / 2));
         }
-
-    }
-
-    private float GetCurrentAngle()
-    {
-        // Calculate the current angle of the pendulum
-        float currentAngle = limit * Mathf.Sin((Time.time - pausedTime) * speed + pausedAngle);
-        return currentAngle;
     }
 }
