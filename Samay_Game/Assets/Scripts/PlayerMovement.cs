@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
             if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
             {
                 ySpeed = jumpSpeed;
+                ySpeed -= 2f * Time.deltaTime;
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
             }
@@ -85,6 +86,8 @@ public class PlayerMovement : MonoBehaviour
         {
             characterController.stepOffset = 0;
         }
+
+        Debug.Log(ySpeed);
 
         Vector3 velocity = movementDirection * speed;
         velocity.y = ySpeed;
