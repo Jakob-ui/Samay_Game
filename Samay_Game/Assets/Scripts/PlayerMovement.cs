@@ -87,8 +87,6 @@ public class PlayerMovement : MonoBehaviour
             characterController.stepOffset = 0;
         }
 
-        Debug.Log(ySpeed);
-
         Vector3 velocity = movementDirection * speed;
         velocity.y = ySpeed;
 
