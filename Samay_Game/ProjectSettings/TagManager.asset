@@ -8,6 +8,7 @@ TagManager:
   - Pendulum
   - FreezingItem
   - Exit
+  - PressurePlate
   layers:
   - Default
   - TransparentFX
