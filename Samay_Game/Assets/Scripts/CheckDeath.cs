@@ -48,5 +48,9 @@ public class CheckDeath : MonoBehaviour
         {
             isDead = true;
         }
+        if (other.gameObject.CompareTag("Death"))
+        {
+            isDead = true;
+        }
     }
 }

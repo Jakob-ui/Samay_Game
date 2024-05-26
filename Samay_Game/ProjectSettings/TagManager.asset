@@ -9,6 +9,7 @@ TagManager:
   - FreezingItem
   - Exit
   - PressurePlate
+  - Death
   layers:
   - Default
   - TransparentFX

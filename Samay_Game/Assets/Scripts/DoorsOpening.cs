@@ -20,14 +20,13 @@ public class DoorsOpening : MonoBehaviour
     {
         if (!TimeStopControll.activated)
         {
-            return;  // Wenn die Tür gestoppt ist, nichts weiter tun
+            return;
         }
-        Vector3 direction = isOpening ? Vector3.left : Vector3.right;
+        Vector3 direction = isOpening ? Vector3.forward : Vector3.back;
 
         if (PressurePlateTrigger.platepressed)
         {
             isOpening = true;
-            Debug.Log("Türe öffnen");
             if (transform.position.z < openposition)
             {
                 transform.Translate(direction * speed * Time.deltaTime);
@@ -40,7 +39,6 @@ public class DoorsOpening : MonoBehaviour
         else
         {
             isOpening = false;
-            Debug.Log("Türe schließen");
             if (transform.position.z > closedposition)
             {
                 transform.Translate(direction * speed * 2f * Time.deltaTime);
