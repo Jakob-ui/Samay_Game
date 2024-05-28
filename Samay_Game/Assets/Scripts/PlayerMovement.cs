@@ -106,8 +106,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 wasser.enabled = !wasser.enabled;
                 timestop = !timestop;
-
-                Debug.Log(timestop);
             }
             else
             {

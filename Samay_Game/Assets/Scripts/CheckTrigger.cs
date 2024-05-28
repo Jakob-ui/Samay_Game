@@ -10,7 +10,7 @@ public class CheckTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("PressurePlate"))
         {
             platepressed = true;
-            Debug.Log(platepressed);
+
         }
     }
     void OnTriggerExit(Collider other)
@@ -18,7 +18,7 @@ public class CheckTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("PressurePlate"))
         {
             platepressed = false;
-            Debug.Log(platepressed);
+
         }
     }
 }

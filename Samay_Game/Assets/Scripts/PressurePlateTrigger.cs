@@ -17,9 +17,6 @@ public class PressurePlateTrigger : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("pressedposition:" + pressedposition);
-        Debug.Log("notpressedposition:" + notpressedposition);
-        Debug.Log("platepressed:" + platepressed);
 
         if (platepressed)
         {
@@ -29,7 +26,6 @@ public class PressurePlateTrigger : MonoBehaviour
             }
             if (transform.position.y >= pressedposition)
             {
-                Debug.Log("pressed down");
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
         }
@@ -41,7 +37,6 @@ public class PressurePlateTrigger : MonoBehaviour
             }
             if (transform.position.y <= notpressedposition)
             {
-                Debug.Log("going up");
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
         }

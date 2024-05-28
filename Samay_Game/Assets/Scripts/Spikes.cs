@@ -25,7 +25,6 @@ public class Spikes : MonoBehaviour
             }
             if (transform.position.y >= defaultPosition)
             {
-                Debug.Log("pressed down");
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
         }
@@ -37,7 +36,6 @@ public class Spikes : MonoBehaviour
             }
             if (transform.position.y <= changedPosition)
             {
-                Debug.Log("going up");
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
         }
