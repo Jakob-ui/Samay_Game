@@ -5,20 +5,28 @@ using UnityEngine;
 public class CheckDeath : MonoBehaviour
 {
     [SerializeField] private CharacterController player;
+    [SerializeField] private GameObject DeathPlane;
     private Vector3 playerStartPosition;
+    private float deathcoords;
 
     private bool isDead = false;
 
     void Start()
     {
         playerStartPosition = transform.position;
+        if (DeathPlane != null)
+        {
+            deathcoords = DeathPlane.transform.position.y + 1;
+        }
     }
 
     void Update()
     {
         if (player == null) return;
 
-        if (transform.position.y <= 10)
+
+
+        if (transform.position.y <= deathcoords)
         {
             isDead = true;
         }
