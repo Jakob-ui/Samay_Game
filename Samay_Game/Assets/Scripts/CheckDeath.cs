@@ -18,7 +18,7 @@ public class CheckDeath : MonoBehaviour
     {
         if (player == null) return;
 
-        if (transform.position.y <= 6)
+        if (transform.position.y <= 10)
         {
             isDead = true;
         }
@@ -31,7 +31,7 @@ public class CheckDeath : MonoBehaviour
 
             isDead = false;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             isDead = true;
         }
