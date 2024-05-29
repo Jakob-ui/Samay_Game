@@ -39,7 +39,7 @@ public class TimeStopControll : MonoBehaviour
             Rigidbody rb = item.GetComponent<Rigidbody>();
             if (rb == null)
             {
-                Debug.LogWarning("Rigidbody component is missing on " + item.name);
+                Debug.LogWarning("Rigidbody for Freeze effect is missing on " + item.name);
                 continue;
             }
             freezingItemsRBs.Add(rb);
