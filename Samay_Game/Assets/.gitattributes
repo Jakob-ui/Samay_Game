@@ -1,0 +1,2 @@
+AssetStore filter=lfs diff=lfs merge=lfs -text
+AssetStore/ filter=lfs diff=lfs merge=lfs -text
