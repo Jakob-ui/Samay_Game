@@ -144,7 +144,7 @@ public class TimeStopControll : MonoBehaviour
         }
         else
         {
-            RecoverTimeBar(0.5f);
+            RecoverTimeBar(0.035f);
             //timeeffect.SetFloat("_Fullscreenintesity", 0f);
         }
 

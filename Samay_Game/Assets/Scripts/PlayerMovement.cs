@@ -77,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
             if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
             {
                 ySpeed = jumpSpeed;
+                ySpeed -= 2f * Time.deltaTime;
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
             }
@@ -105,8 +106,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 wasser.enabled = !wasser.enabled;
                 timestop = !timestop;
-
-                Debug.Log(timestop);
             }
             else
             {

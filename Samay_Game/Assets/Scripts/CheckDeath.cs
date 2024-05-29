@@ -5,20 +5,28 @@ using UnityEngine;
 public class CheckDeath : MonoBehaviour
 {
     [SerializeField] private CharacterController player;
+    [SerializeField] private GameObject DeathPlane;
     private Vector3 playerStartPosition;
+    private float deathcoords;
 
     private bool isDead = false;
 
     void Start()
     {
         playerStartPosition = transform.position;
+        if (DeathPlane != null)
+        {
+            deathcoords = DeathPlane.transform.position.y + 1;
+        }
     }
 
     void Update()
     {
         if (player == null) return;
 
-        if (transform.position.y <= 6)
+
+
+        if (transform.position.y <= deathcoords)
         {
             isDead = true;
         }
@@ -31,7 +39,7 @@ public class CheckDeath : MonoBehaviour
 
             isDead = false;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             isDead = true;
         }
@@ -40,6 +48,15 @@ public class CheckDeath : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pendulum"))
+        {
+            isDead = true;
+        }
+
+        if (other.gameObject.CompareTag("Exit"))
+        {
+            isDead = true;
+        }
+        if (other.gameObject.CompareTag("Death"))
         {
             isDead = true;
         }
