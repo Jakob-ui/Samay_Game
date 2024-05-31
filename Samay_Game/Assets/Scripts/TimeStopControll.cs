@@ -140,11 +140,11 @@ public class TimeStopControll : MonoBehaviour
         if (activated == false)
         {
             //timeeffect.SetFloat("_Fullscreenintesity", 0.1f);
-            ReduceTimeBar(0.05f);
+            ReduceTimeBar(0.04f);
         }
         else
         {
-            RecoverTimeBar(0.035f);
+            RecoverTimeBar(0.025f);
             //timeeffect.SetFloat("_Fullscreenintesity", 0f);
         }
 
