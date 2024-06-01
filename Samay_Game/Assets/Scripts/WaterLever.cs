@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,8 +10,9 @@ public class WaterLever : MonoBehaviour
     private bool leverState;
     private List<GameObject> waterfountains;
     private bool flag = false;
-
+    [SerializeField] private TextMeshProUGUI leverText;
     [SerializeField] private Animator animator;
+
 
 
     void Start()
@@ -19,6 +21,7 @@ public class WaterLever : MonoBehaviour
         GameObject[] foundFountains = GameObject.FindGameObjectsWithTag("Fountain");
         waterfountains.AddRange(foundFountains);
         DeactivateAll();
+        leverText.enabled = false;
     }
 
 
@@ -46,6 +49,7 @@ public class WaterLever : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             leverState = true;
+            leverText.enabled = true;
         }
     }
     void OnTriggerExit(Collider other)
@@ -53,6 +57,7 @@ public class WaterLever : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             leverState = false;
+            leverText.enabled = false;
         }
     }
 
