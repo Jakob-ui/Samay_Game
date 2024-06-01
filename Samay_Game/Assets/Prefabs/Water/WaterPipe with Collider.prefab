@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 4721888358228122015}
   m_Layer: 0
   m_Name: vfxgraph_StylizedWater
-  m_TagString: Untagged
+  m_TagString: Fountain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
