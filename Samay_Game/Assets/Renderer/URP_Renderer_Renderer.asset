@@ -68,10 +68,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0feb28482c472854aaedd28534fbc32d, type: 3}
   m_Name: Blit
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   settings:
     Event: 500
-    blitMaterial: {fileID: -876546973899608171, guid: a27ab30e1a84dfa41be8a12f2110b066, type: 3}
+    blitMaterial: {fileID: 2100000, guid: 194544c54a8d9a546ad9067cb7f594fe, type: 2}
     blitMaterialPassIndex: 0
     setInverseViewMatrix: 0
     requireDepthNormals: 0

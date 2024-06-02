@@ -6,7 +6,7 @@ public class TimeStopControll : MonoBehaviour
 {
     [Header("Timestopmode")]
     private List<Rigidbody> freezingItemsRBs;
-    //[SerializeField] private Material timeeffect;
+    [SerializeField] public Material timeeffect;
 
 
     [Header("Timestop Check")]
@@ -79,15 +79,15 @@ public class TimeStopControll : MonoBehaviour
 
     void ControllTimeBar()
     {
-        if (activated == false)
+        if (!activated)
         {
-            //timeeffect.SetFloat("_Fullscreenintesity", 0.1f);
+            timeeffect.SetFloat("_FullScreenIntensity", 0.1f);
             ReduceTimeBar(0.04f);
         }
         else
         {
             RecoverTimeBar(0.025f);
-            //timeeffect.SetFloat("_Fullscreenintesity", 0f);
+            timeeffect.SetFloat("_FullScreenIntensity", 0f);
         }
 
         if (currentValue <= 0)
