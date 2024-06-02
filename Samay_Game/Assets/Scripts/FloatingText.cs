@@ -8,13 +8,14 @@ public class FloatingText : MonoBehaviour
     Transform mainCam;
     Transform obj;
     Transform worldSpaceCanvas;
+    [SerializeField] private Canvas canvas;
     public Vector3 offset;
 
     void Start()
     {
         mainCam = Camera.main.transform;
         obj = transform.parent;
-        worldSpaceCanvas = FindObjectOfType<Canvas>().transform;
+        worldSpaceCanvas = canvas.transform;
 
         transform.SetParent(worldSpaceCanvas);
     }
