@@ -10,6 +10,7 @@ TagManager:
   - Exit
   - PressurePlate
   - Death
+  - Fountain
   layers:
   - Default
   - TransparentFX

@@ -39,7 +39,7 @@ public class TimeStopControll : MonoBehaviour
             Rigidbody rb = item.GetComponent<Rigidbody>();
             if (rb == null)
             {
-                Debug.LogWarning("Rigidbody component is missing on " + item.name);
+                Debug.LogWarning("Rigidbody for Freeze effect is missing on " + item.name);
                 continue;
             }
             freezingItemsRBs.Add(rb);
@@ -140,11 +140,11 @@ public class TimeStopControll : MonoBehaviour
         if (activated == false)
         {
             //timeeffect.SetFloat("_Fullscreenintesity", 0.1f);
-            ReduceTimeBar(0.05f);
+            ReduceTimeBar(0.04f);
         }
         else
         {
-            RecoverTimeBar(0.035f);
+            RecoverTimeBar(0.025f);
             //timeeffect.SetFloat("_Fullscreenintesity", 0f);
         }
 

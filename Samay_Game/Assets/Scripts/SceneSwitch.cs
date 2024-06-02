@@ -1,27 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour
 {
-    bool startScreen = true;
-    bool gameScreen = false;
-
-
-    void Start()
+    public void LoadSceneByName(string sceneName)
     {
-        
-    }
-
-    void Update()
-    {
-        if (startScreen && Input.GetKeyDown("Spacebar"))
-        {
-            startScreen = false;
-            gameScreen = true;
-
-            //SceneSwitch.LoadScene()
-        }
+        SceneManager.LoadScene(sceneName);
     }
 }
