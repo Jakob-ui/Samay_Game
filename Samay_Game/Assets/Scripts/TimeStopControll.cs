@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class TimeStopControll : MonoBehaviour
 {
-    [Header("Sphere Parameters")]
-    [SerializeField] private float targetScale = 40.0f;
-    [SerializeField] private float scaleSpeed = 0.20f;
-    [SerializeField] private MeshRenderer sphereRenderer;
-
-
     [Header("Timestopmode")]
-    [SerializeField] private bool sphereMode;
     private List<Rigidbody> freezingItemsRBs;
     //[SerializeField] private Material timeeffect;
 
 
     [Header("Timestop Check")]
-    private bool isScaling = false;
     public static bool activated = true;
 
 
@@ -48,62 +40,12 @@ public class TimeStopControll : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown("joystick button 1"))
         {
-            if (sphereMode && !isScaling)
-            {
-                StartCoroutine(ScaleUp());
-            }
-            else if (!sphereMode)
-            {
-                Timestop();
-            }
+            Timestop();
             activated = !activated;
         }
         ControllTimeBar();
-    }
-
-    private IEnumerator ScaleUp()
-    {
-        if (!activated)
-        {
-            sphereRenderer.enabled = false;
-        }
-        else
-        {
-            sphereRenderer.enabled = true;
-        }
-        isScaling = true;
-
-        while (transform.localScale.x < targetScale)
-        {
-            transform.localScale += new Vector3(scaleSpeed, scaleSpeed, scaleSpeed) * Time.deltaTime;
-            yield return null;
-        }
-
-        transform.localScale = Vector3.zero;
-        isScaling = false;
-
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "FreezingItem")
-        {
-            Rigidbody sphereRB = other.gameObject.GetComponent<Rigidbody>();
-            if (sphereRB != null)
-            {
-                if (!activated)
-                {
-                    sphereRB.constraints = RigidbodyConstraints.FreezeAll;
-                }
-                else
-                {
-                    sphereRB.constraints = RigidbodyConstraints.None;
-                    sphereRB.constraints = RigidbodyConstraints.FreezeRotation;
-                }
-            }
-        }
     }
 
     void Timestop()
@@ -151,7 +93,6 @@ public class TimeStopControll : MonoBehaviour
         if (currentValue <= 0)
         {
             activated = true;
-            StartCoroutine(ScaleUp());
         }
     }
 

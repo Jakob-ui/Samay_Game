@@ -14,7 +14,6 @@ public class AnimationStop : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (TimeStopControll.activated)

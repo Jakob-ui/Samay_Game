@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform cameraTransform;
 
     public static bool timestop = false;
+    private bool toggleControllerSprint = false;
 
     [Header("Character Movement")]
     private CharacterController characterController;
@@ -51,6 +52,19 @@ public class PlayerMovement : MonoBehaviour
             inputMagnitude += 0.5f;
         }
 
+        if (Input.GetKeyDown("joystick button 8"))
+        {
+            toggleControllerSprint = !toggleControllerSprint;
+        }
+        if (toggleControllerSprint)
+        {
+            inputMagnitude += 0.5f;
+        }
+        if (horizontalInput == 0 && verticalInput == 0)
+        {
+            toggleControllerSprint = false;
+        }
+
         //animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
         float speed = inputMagnitude * maximumSpeed;
@@ -64,10 +78,11 @@ public class PlayerMovement : MonoBehaviour
             lastGroundedTime = Time.time;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || Input.GetKeyDown("joystick button 0"))
         {
             jumpButtonPressedTime = Time.time;
         }
+
 
         if (Time.time - lastGroundedTime <= jumpButtonGracePeriod)
         {
@@ -97,21 +112,6 @@ public class PlayerMovement : MonoBehaviour
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
-        }
-
-        //Timestop
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            if (timestop == false)
-            {
-                wasser.enabled = !wasser.enabled;
-                timestop = !timestop;
-            }
-            else
-            {
-
-                wasser.enabled = !wasser.enabled;
-            }
         }
     }
 
