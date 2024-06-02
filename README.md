@@ -1,10 +1,4 @@
-<h1 style="color:orange;">
-Samay_Game
-</h1>
-
-## Willkommen!
-
----
+<h1 style="color: orange;">Samay_Game</h1>
 
 ### Story:
 
