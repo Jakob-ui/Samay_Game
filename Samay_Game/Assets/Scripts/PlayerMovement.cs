@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -100,10 +99,19 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
 
-        // test scene load
+        //Timestop
         if (Input.GetKeyDown(KeyCode.T))
         {
-            SceneManager.LoadScene("LEVEL_2");
+            if (timestop == false)
+            {
+                wasser.enabled = !wasser.enabled;
+                timestop = !timestop;
+            }
+            else
+            {
+
+                wasser.enabled = !wasser.enabled;
+            }
         }
     }
 
