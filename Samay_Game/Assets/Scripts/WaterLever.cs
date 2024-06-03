@@ -27,14 +27,14 @@ public class WaterLever : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && !flag && leverState)
+        if (Input.GetKeyDown(KeyCode.F) && !flag && leverState || Input.GetKeyDown("joystick button 2") && !flag && leverState)
         {
             flag = !flag;
             ActivateAll();
             Debug.Log("wasser marsch");
             animator.SetBool("LeverState", true);
         }
-        else if (Input.GetKeyDown(KeyCode.F) && flag && leverState)
+        else if (Input.GetKeyDown(KeyCode.F) && flag && leverState || Input.GetKeyDown("joystick button 2") && flag && leverState)
         {
             flag = !flag;
             DeactivateAll();
