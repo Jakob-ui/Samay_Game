@@ -40,7 +40,7 @@ public class TimeStopControll : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown("joystick button 1"))
+        if (Input.GetKeyDown(KeyCode.Q) && !PauseMenu.isPaused || Input.GetKeyDown("joystick button 1") && !PauseMenu.isPaused)
         {
             Timestop();
             activated = !activated;

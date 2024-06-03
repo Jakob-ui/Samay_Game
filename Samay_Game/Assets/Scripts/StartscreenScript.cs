@@ -17,7 +17,7 @@ public class StartscreenScript : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            scene.LoadSceneByName("TUT_NEUa");
+            scene.LoadSceneByName("Tutorial");
         }
     }
 }

@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private Button menu;
     public SceneSwitch scene;
     public GameObject pauseMenuPanel;
-    private bool isPaused = false;
+    public static bool isPaused = false;
 
     void Start()
     {
