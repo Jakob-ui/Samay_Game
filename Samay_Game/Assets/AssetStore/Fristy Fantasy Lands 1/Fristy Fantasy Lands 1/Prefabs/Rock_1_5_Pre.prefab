@@ -57,6 +57,10 @@ PrefabInstance:
       value: Rock_1_5_Pre
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
       value: 0.89919686
       objectReference: {fileID: 0}
@@ -76,8 +80,38 @@ PrefabInstance:
       propertyPath: m_LODs.Array.data[4].screenRelativeHeight
       value: 0.045497775
       objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+      propertyPath: m_LODs.Array.data[0].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+      propertyPath: m_LODs.Array.data[3].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+      propertyPath: m_LODs.Array.data[4].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+      propertyPath: m_LODs.Array.data[5].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+      propertyPath: m_LODs.Array.data[6].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7660337516626786863, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+    - {fileID: 5400744250001164424, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+    - {fileID: -3648473967873943947, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+    - {fileID: -3245904777144398077, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+    - {fileID: 2106321406796272134, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
+    - {fileID: 5507261103139901231, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63fabf2eec60df04db2b6ab277019e38, type: 3}

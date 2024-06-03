@@ -57,6 +57,10 @@ PrefabInstance:
       value: Rock_1_1_Pre
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
       value: 0.9043189
       objectReference: {fileID: 0}
@@ -72,8 +76,33 @@ PrefabInstance:
       propertyPath: m_LODs.Array.data[3].screenRelativeHeight
       value: 0.12945533
       objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+      propertyPath: m_LODs.Array.data[0].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+      propertyPath: m_LODs.Array.data[3].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+      propertyPath: m_LODs.Array.data[4].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+      propertyPath: m_LODs.Array.data[5].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -6668765286653327665, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+    - {fileID: 7460367504148117919, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+    - {fileID: 265335930585971941, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+    - {fileID: -1986647366484101989, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
+    - {fileID: -8964762099379322054, guid: 6028daf116f08c645af940a58654a7ef, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6028daf116f08c645af940a58654a7ef, type: 3}

@@ -80,8 +80,33 @@ PrefabInstance:
       propertyPath: m_LODs.Array.data[4].screenRelativeHeight
       value: 0.0502638
       objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+      propertyPath: m_LODs.Array.data[0].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+      propertyPath: m_LODs.Array.data[1].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+      propertyPath: m_LODs.Array.data[3].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+      propertyPath: m_LODs.Array.data[4].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+      propertyPath: m_LODs.Array.data[5].renderers.Array.data[0].renderer
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -9001479385846811193, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+    - {fileID: 3753702258123893133, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+    - {fileID: -7540147798080898002, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+    - {fileID: -5925018288989103805, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
+    - {fileID: 8351255119281408600, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39b9cbe654535304ab6ccb60b7ee8cd7, type: 3}

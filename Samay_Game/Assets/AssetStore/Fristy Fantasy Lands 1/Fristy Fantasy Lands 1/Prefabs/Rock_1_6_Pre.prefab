@@ -57,6 +57,10 @@ PrefabInstance:
       value: Rock_1_6_Pre
       objectReference: {fileID: 0}
     - target: {fileID: 4742473837712756890, guid: 26fb440f44dfa8a46a983aea2a8a46a8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4742473837712756890, guid: 26fb440f44dfa8a46a983aea2a8a46a8, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
       value: 0.9043189
       objectReference: {fileID: 0}
