@@ -17,8 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField]
     private Transform cameraTransform;
-
-    public static bool timestop = false;
     private bool toggleControllerSprint = false;
 
     [Header("Character Movement")]
