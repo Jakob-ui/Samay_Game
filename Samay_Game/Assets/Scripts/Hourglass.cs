@@ -5,65 +5,52 @@ using UnityEngine;
 
 public class Hourglass : MonoBehaviour
 {
-    private float rotationSpeed = 20.0f;
-    [SerializeField] private float startangle;
-    [SerializeField] private float currentangle;
-    [SerializeField] private float destinationAngle;
-    private float angle = 90f;
-    private bool turnLeft = false;
-    private bool turnRight = false;
-    void Start()
-    {
-    }
-
+    private float rotationAngle = -90f;
+    private bool canRotate = false;
+    private float rotationDuration = 1f;
+    private bool isRotating = false;
 
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.F) && !turnRight || Input.GetKeyDown("joystick button 5") && turnRight)
+        if (Input.GetKeyUp(KeyCode.R) && canRotate && !isRotating)
         {
-            turnRight = true;
-            startangle = transform.rotation.eulerAngles.x;
-            destinationAngle = startangle + angle;
+            StartCoroutine(RotateSmoothly(Vector3.right, rotationAngle, rotationDuration));
         }
-        if (Input.GetKeyDown(KeyCode.R) && !turnLeft || Input.GetKeyDown("joystick button 4") && turnLeft)
-        {
-            turnLeft = true;
-            startangle = transform.localEulerAngles.x;
-            destinationAngle = startangle - angle;
-        }
-        TurnLeft();
-        TurnRight();
     }
 
-    private void TurnLeft()
+    private void OnTriggerEnter(Collider other)
     {
-        currentangle = transform.localEulerAngles.x;
-        if (turnLeft)
+        if (other.gameObject.CompareTag("Player"))
         {
-            float angleDelta = rotationSpeed * Time.deltaTime;
-            transform.Rotate(Vector3.left * angleDelta, Space.Self);
-            if (destinationAngle >= currentangle)
-            {
-                turnLeft = false;
-            }
+            canRotate = true;
         }
-
     }
 
-    private void TurnRight()
+    private void OnTriggerExit(Collider other)
     {
-        currentangle = transform.localEulerAngles.x;
-        if (turnRight)
+        if (other.gameObject.CompareTag("Player"))
         {
-            float angleDelta = rotationSpeed * Time.deltaTime;
-            transform.Rotate(Vector3.right * angleDelta, Space.Self);
-            if (destinationAngle <= currentangle)
-            {
-                turnRight = false;
-            }
+            canRotate = false;
         }
     }
 
+    private IEnumerator RotateSmoothly(Vector3 axis, float angle, float duration)
+    {
+        isRotating = true;
 
+        Quaternion startRotation = transform.localRotation;
+        Quaternion endRotation = transform.localRotation * Quaternion.Euler(axis * angle);
+        float elapsed = 0.0f;
+
+        while (elapsed < duration)
+        {
+            transform.localRotation = Quaternion.Slerp(startRotation, endRotation, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.localRotation = endRotation;
+        isRotating = false;
+        Debug.Log("Hourglass rotated EULER! " + gameObject.name + " " + transform.localRotation.eulerAngles.ToString());
+    }
 }
