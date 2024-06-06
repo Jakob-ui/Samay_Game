@@ -19,7 +19,6 @@ public class TutLevelExitTrigger : MonoBehaviour
         fade.FadeIn();
         yield return new WaitForSeconds(1);
         scene.LoadSceneByName("LEVEL_2");
-        fade.FadeOut();
     }
     void OnTriggerEnter(Collider other)
     {

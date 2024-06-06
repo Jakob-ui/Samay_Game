@@ -5,19 +5,21 @@ using UnityEngine.Events;
 
 public class HourglassChecker : MonoBehaviour
 {
-    public UnityEvent onHourglassesCorrectlyRotated;
-
+    public static bool riddlesolved = false;
     [SerializeField] private Hourglass hourglass0;
     [SerializeField] private Hourglass hourglass1;
 
-    private float finalRotation = 270f;
+    private float finalRotation0 = 270f;
+    private float finalRotation1 = 0f;
+
 
     void Update()
     {
-        if (hourglass0.transform.localRotation.eulerAngles.x == finalRotation && hourglass1.transform.localRotation.eulerAngles.x == finalRotation)
+        if (hourglass0.transform.localRotation.eulerAngles.x == finalRotation0 && hourglass1.transform.localRotation.eulerAngles.x == finalRotation1)
         {
             Debug.Log("Hourglasses correctly rotated!");
-            onHourglassesCorrectlyRotated.Invoke();
+            riddlesolved = true;
         }
+        else riddlesolved = false;
     }
 }

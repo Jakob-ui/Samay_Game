@@ -11,6 +11,7 @@ TagManager:
   - PressurePlate
   - Death
   - Fountain
+  - GameEnd
   layers:
   - Default
   - TransparentFX

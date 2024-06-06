@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CheckDeath : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class CheckDeath : MonoBehaviour
     private float deathcoords;
 
     private bool isDead = false;
+    private bool positionupdated = false;
 
     void Start()
     {
@@ -54,6 +56,19 @@ public class CheckDeath : MonoBehaviour
         if (other.gameObject.CompareTag("Death"))
         {
             isDead = true;
+        }
+        if (other.gameObject.CompareTag("Respawn"))
+        {
+            UpdateRespawn();
+        }
+    }
+
+    void UpdateRespawn()
+    {
+        if (positionupdated == false)
+        {
+            playerStartPosition = transform.position;
+            positionupdated = true;
         }
     }
 }

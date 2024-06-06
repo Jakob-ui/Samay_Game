@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
 
 public class Hourglass : MonoBehaviour
@@ -10,9 +11,19 @@ public class Hourglass : MonoBehaviour
     private float rotationDuration = 1f;
     private bool isRotating = false;
 
+    //Text
+    private bool hourglassState;
+    private bool flag = false;
+    [SerializeField] private TextMeshProUGUI leverText;
+
+    void Start()
+    {
+        leverText.enabled = false;
+    }
+
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.R) && canRotate && !isRotating)
+        if (Input.GetKeyUp(KeyCode.F) && canRotate && !isRotating || Input.GetKeyDown("joystick button 2") && canRotate && !isRotating)
         {
             StartCoroutine(RotateSmoothly(Vector3.right, rotationAngle, rotationDuration));
         }
@@ -23,6 +34,8 @@ public class Hourglass : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             canRotate = true;
+            hourglassState = true;
+            leverText.enabled = true;
         }
     }
 
@@ -31,6 +44,8 @@ public class Hourglass : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             canRotate = false;
+            hourglassState = false;
+            leverText.enabled = false;
         }
     }
 
