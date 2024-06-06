@@ -9,17 +9,20 @@ public class HourglassChecker : MonoBehaviour
     [SerializeField] private Hourglass hourglass0;
     [SerializeField] private Hourglass hourglass1;
 
-    private float finalRotation0 = 270f;
-    private float finalRotation1 = 0f;
+
+    private float finalXRotation = 0f;
 
 
     void Update()
     {
-        if (hourglass0.transform.localRotation.eulerAngles.x == finalRotation0 && hourglass1.transform.localRotation.eulerAngles.x == finalRotation1)
+
+        if (hourglass0.transform.localRotation.eulerAngles.x == finalXRotation && hourglass1.transform.localRotation.eulerAngles.x == finalXRotation)
         {
             Debug.Log("Hourglasses correctly rotated!");
             riddlesolved = true;
         }
         else riddlesolved = false;
     }
+
+
 }

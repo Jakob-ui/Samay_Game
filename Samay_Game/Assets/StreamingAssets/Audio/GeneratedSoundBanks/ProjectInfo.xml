@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="Samay_Game_WwiseProject" GUID="{81CA5BEB-98B4-401E-88CD-F08C1D965A2A}" Generator="2023.1.4.8496"/>
+	<CacheRoot>../../../../Samay_Game_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{17D33B11-0B8F-4073-9E40-CEFEF09F1B35}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../Samay_Game_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{E8779C19-FEEF-40D6-A878-7F67ABE2636C}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../Samay_Game_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{E0D86D49-008B-472C-8027-AF1E9779449F}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{8CB9F2EE-2E6B-0ECB-3F28-5B4ECB64EB75}</FileHash>
+</ProjectInfo>
