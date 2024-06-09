@@ -15,7 +15,7 @@ public class Waterstop : MonoBehaviour
     }
     void Update()
     {
-        if (TimeStopControll.activated)
+        if (!TimeStopControll.activated)
         {
             m_Collider.enabled = false;
 

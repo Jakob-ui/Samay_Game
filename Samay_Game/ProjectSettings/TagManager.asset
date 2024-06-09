@@ -12,6 +12,7 @@ TagManager:
   - Death
   - Fountain
   - GameEnd
+  - FreezingParticles
   layers:
   - Default
   - TransparentFX

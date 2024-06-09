@@ -17,4 +17,9 @@ public class TimeBar : MonoBehaviour
     {
         slider.value = strengh;
     }
+
+    public float GetStrength()
+    {
+        return slider.value;
+    }
 }

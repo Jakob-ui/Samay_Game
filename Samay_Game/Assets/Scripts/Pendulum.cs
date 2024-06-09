@@ -19,7 +19,7 @@ public class Pendulum : MonoBehaviour
 
     void Update()
     {
-        if (TimeStopControll.activated)
+        if (!TimeStopControll.activated)
         {
             if (rotationZ > limit)
                 rotationFactor = -1;

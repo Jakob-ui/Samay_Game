@@ -18,7 +18,7 @@ public class DoorsOpening : MonoBehaviour
 
     void Update()
     {
-        if (!TimeStopControll.activated)
+        if (TimeStopControll.activated)
         {
             return;
         }

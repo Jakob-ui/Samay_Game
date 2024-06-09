@@ -6,11 +6,12 @@ public class TimeStopControll : MonoBehaviour
 {
     [Header("Timestopmode")]
     private List<Rigidbody> freezingItemsRBs;
+    private List<ParticleSystem> freezingParticles;
     [SerializeField] public Material timeeffect;
 
 
     [Header("Timestop Check")]
-    public static bool activated = true;
+    public static bool activated = false;
 
 
     [Header("Time Bar")]
@@ -36,15 +37,28 @@ public class TimeStopControll : MonoBehaviour
             }
             freezingItemsRBs.Add(rb);
         }
+
+        freezingParticles = new List<ParticleSystem>();
+        GameObject[] freezingParticlesGameObjects = GameObject.FindGameObjectsWithTag("FreezingParticles");
+        foreach (GameObject item in freezingParticlesGameObjects)
+        {
+            ParticleSystem[] ps = item.GetComponentsInChildren<ParticleSystem>();
+            if (ps == null)
+            {
+                Debug.LogWarning("ParticleSystems for Freeze effect are missing on " + item.name);
+                continue;
+            }
+            freezingParticles.AddRange(ps);
+        }
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q) && !PauseMenu.isPaused || Input.GetKeyDown("joystick button 1") && !PauseMenu.isPaused)
         {
-            Timestop();
             activated = !activated;
         }
+        Timestop();
         ControllTimeBar();
     }
 
@@ -60,6 +74,17 @@ public class TimeStopControll : MonoBehaviour
             {
                 rb.constraints = RigidbodyConstraints.None;
                 rb.constraints = RigidbodyConstraints.FreezeRotation;
+            }
+        }
+        foreach (ParticleSystem ps in freezingParticles)
+        {
+            if (activated)
+            {
+                ps.Pause();
+            }
+            else if (ps.isPaused)
+            {
+                ps.Play();
             }
         }
     }
@@ -79,20 +104,20 @@ public class TimeStopControll : MonoBehaviour
 
     void ControllTimeBar()
     {
-        if (!activated)
+        if (activated)
         {
             timeeffect.SetFloat("_FullScreenIntensity", 0.1f);
-            ReduceTimeBar(0.04f);
+            ReduceTimeBar(Time.deltaTime * 10);
         }
         else
         {
-            RecoverTimeBar(0.025f);
+            RecoverTimeBar(Time.deltaTime * 5);
             timeeffect.SetFloat("_FullScreenIntensity", 0f);
         }
 
         if (currentValue <= 0)
         {
-            activated = true;
+            activated = false;
         }
     }
 

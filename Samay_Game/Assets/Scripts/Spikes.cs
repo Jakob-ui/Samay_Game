@@ -19,7 +19,7 @@ public class Spikes : MonoBehaviour
     {
         if (!PressurePlateTrigger.platepressed)
         {
-            if (!TimeStopControll.activated)
+            if (TimeStopControll.activated)
             {
                 return;
             }
@@ -30,7 +30,7 @@ public class Spikes : MonoBehaviour
         }
         if (PressurePlateTrigger.platepressed)
         {
-            if (!TimeStopControll.activated)
+            if (TimeStopControll.activated)
             {
                 return;
             }
