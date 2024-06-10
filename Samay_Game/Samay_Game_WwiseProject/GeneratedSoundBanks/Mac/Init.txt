@@ -1,4 +1,13 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	627643701	Lever_State			\Default Work Unit\Lever_State	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Lever_State			
+	930712164	Off	Lever_State			
+	1651971902	On	Lever_State			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	2705837510	CaveAudioBus			\Default Work Unit\CaveAudioBus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

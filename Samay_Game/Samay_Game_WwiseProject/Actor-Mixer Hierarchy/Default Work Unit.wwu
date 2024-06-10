@@ -1,6 +1,934 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Environment" ID="{E431EB63-2425-4459-84A2-6960B20F5B31}" ShortID="5096097">
+					<ChildrenList>
+						<Sound Name="FireCrackling" ID="{952EFA86-560D-49C9-B550-6D3C93F571D7}" ShortID="156238815">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Fire Flame Crackle - SFX Producer" ID="{AEC36838-BBAC-45B3-88CF-A579B202C2F0}">
+									<Language>SFX</Language>
+									<AudioFile>ES_Fire Flame Crackle - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="348359839"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Fire Flame Crackle - SFX Producer" ID="{AEC36838-BBAC-45B3-88CF-A579B202C2F0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CaveDrips" ID="{08A915E7-F1C4-4B52-8CA3-3679EEB507DC}" ShortID="30985457">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Cave Ambience Drips - SFX Producer" ID="{65145B69-D0A1-43E8-9CD0-EA8F570E9AC6}">
+									<Language>SFX</Language>
+									<AudioFile>ES_Cave Ambience Drips - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="152339487"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Cave Ambience Drips - SFX Producer" ID="{65145B69-D0A1-43E8-9CD0-EA8F570E9AC6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Waterflow" ID="{FC1C75CE-1217-484F-9846-6E83E4A42037}" ShortID="236274432">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-150</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_SFX Waterfall - SFX Producer" ID="{ED96B76B-3DB1-4489-A74D-8F492318F076}">
+									<Language>SFX</Language>
+									<AudioFile>ES_SFX Waterfall - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="505168709"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_SFX Waterfall - SFX Producer" ID="{ED96B76B-3DB1-4489-A74D-8F492318F076}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI" ID="{40F6EE7E-6457-44EA-BC5E-650D69C5D513}" ShortID="673078188">
+					<ChildrenList>
+						<Sound Name="Jungle Ambience" ID="{653AC375-96D7-4A18-8C29-8D2C8BF00A6B}" ShortID="101824945">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Jungle Ambience 14 - SFX Producer" ID="{218ECB0A-9C63-4574-BFAD-AD00917EA970}">
+									<Language>SFX</Language>
+									<AudioFile>ES_Jungle Ambience 14 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="893283590"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Jungle Ambience 14 - SFX Producer" ID="{218ECB0A-9C63-4574-BFAD-AD00917EA970}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Buttons" ID="{31177B40-770E-4D6C-9788-9742B616A7A5}" ShortID="302184493">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FA865ED7-E323-4D56-B68D-1A83A3C0E1DD}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Button Push 3 - SFX Producer" ID="{8A311162-5BF2-425A-8DC7-49617FC7C794}" ShortID="174755656">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Button Push 3 - SFX Producer" ID="{13D2E0D3-836C-42E7-B40A-2BBFF30E0592}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Button Push 3 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="344014615"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Button Push 3 - SFX Producer" ID="{13D2E0D3-836C-42E7-B40A-2BBFF30E0592}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Button Push 5 - SFX Producer" ID="{310089A3-4821-4255-BC48-ECBB1F2C28B7}" ShortID="851705391">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Button Push 5 - SFX Producer" ID="{22A7FFC5-328C-4874-83AE-630D1942C233}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Button Push 5 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="363602015"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Button Push 5 - SFX Producer" ID="{22A7FFC5-328C-4874-83AE-630D1942C233}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{193D7BC7-7679-42FD-A9E8-F134270F0168}" ShortID="575260815">
+					<ChildrenList>
+						<Sound Name="Jump" ID="{D89B4485-B00E-4D91-87A5-88DC3C73FB86}" ShortID="893876498">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Dirt Impacts 54 - SFX Producer" ID="{1C8A8347-058C-40AA-B4E8-7BCFE02563C1}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.149063670411985"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.186516853932584"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.638202247191012"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ES_Dirt Impacts 54 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="646025256"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Dirt Impacts 54 - SFX Producer" ID="{1C8A8347-058C-40AA-B4E8-7BCFE02563C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Footsteps" ID="{CBED957D-F201-4695-9243-29EE72F2976E}" ShortID="316861965">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5A3F5BC4-F5BE-490C-858B-6C1A6560E1F1}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="783"/>
+													<Property Name="Min" Type="Real64" Value="-354"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{67C32081-F33F-4674-A824-2D4EA6B35027}" ShortID="423357392">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{55EE8B7B-89D6-45EA-9375-EB22113AFB31}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.286736579275906"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="327486410"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{55EE8B7B-89D6-45EA-9375-EB22113AFB31}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Footsteps Rocks 6 - SFX Producer_01" ID="{5768A080-27B5-483E-A095-AAA94693C7AD}" ShortID="151057503">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{AD1E87BA-840B-453D-B2E7-2A480FBA0D90}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.363770287141074"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.641947565543072"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="94354583"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{AD1E87BA-840B-453D-B2E7-2A480FBA0D90}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Footsteps Rocks 6 - SFX Producer_02" ID="{DA4AC1B0-DFB4-4312-BF05-DAC5EC742624}" ShortID="162536837">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{67809F9A-767A-4C22-A613-F5A08861B8FE}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.29245443196005"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.55351310861423"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="515103889"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{67809F9A-767A-4C22-A613-F5A08861B8FE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Footsteps Rocks 6 - SFX Producer_03" ID="{79BB2FE9-249B-493D-ADF1-54616DAB6ACE}" ShortID="647281676">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{52457ADD-7AF7-49F2-9B8B-583E2A978484}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.70330087390762"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.05851186017478"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="185391235"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{52457ADD-7AF7-49F2-9B8B-583E2A978484}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="HittingGround" ID="{3C8BE137-115D-47D5-B179-2474403BB000}" ShortID="1052560376">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Hard Sole Shoes 182 - SFX Producer" ID="{4F31B959-77B1-4DDB-BC52-D91ADA9DDB16}">
+									<Language>SFX</Language>
+									<AudioFile>ES_Hard Sole Shoes 182 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="180120491"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Hard Sole Shoes 182 - SFX Producer" ID="{4F31B959-77B1-4DDB-BC52-D91ADA9DDB16}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Falling" ID="{07B9CA86-644B-45A8-B9D3-1A5869B2B830}" ShortID="989079516">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>460</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-34</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Wind Storm 5 - SFX Producer" ID="{D9D6C82E-3F93-469B-820C-D09ACC51BADD}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.50561797752809"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.168539325842697"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.4438202247191"/>
+										<Property Name="TrimEnd" Type="Real64" Value="9.18539325842698"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ES_Wind Storm 5 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="658470552"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Wind Storm 5 - SFX Producer" ID="{D9D6C82E-3F93-469B-820C-D09ACC51BADD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Effects" ID="{6C067DEB-CF3A-4385-B405-C7CD97935374}" ShortID="686843365">
+					<ChildrenList>
+						<Sound Name="Hourglass" ID="{8C59002E-FF5D-465D-AB72-380D20339F2C}" ShortID="287501281">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3664E334-EFC2-4A58-977D-17547AD72DB0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="505"/>
+													<Property Name="Min" Type="Real64" Value="-379"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Stone Drag Object 3 - SFX Producer" ID="{266961BA-D0AF-4D0C-B62E-8097E988A716}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.353662921348315"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ES_Stone Drag Object 3 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="273947239"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Stone Drag Object 3 - SFX Producer" ID="{266961BA-D0AF-4D0C-B62E-8097E988A716}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="RockRumble" ID="{F502858F-0170-4EB7-822F-CDE538178E35}" ShortID="548330816">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-370</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Crash Rock Debris 19 - SFX Producer" ID="{9F38AFF9-A5FD-482F-B33B-2A63692494B0}" ShortID="850901852">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Crash Rock Debris 19 - SFX Producer" ID="{2E01EBB4-0D86-46C0-9EA5-EA14EFD07EDE}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Crash Rock Debris 19 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="340851691"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Crash Rock Debris 19 - SFX Producer" ID="{2E01EBB4-0D86-46C0-9EA5-EA14EFD07EDE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Rock Debris Spill 1 - SFX Producer" ID="{A6E2B089-D099-4179-A0B7-84E74ED9065A}" ShortID="540724177">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Rock Debris Spill 1 - SFX Producer" ID="{5A41249E-C5E7-4B17-91EC-A1C046335BF2}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Rock Debris Spill 1 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1005148804"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Rock Debris Spill 1 - SFX Producer" ID="{5A41249E-C5E7-4B17-91EC-A1C046335BF2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Rock Impact 3 - SFX Producer" ID="{9F0861AF-F4D4-48D2-9D18-CC93E1E0C213}" ShortID="895158243">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Rock Impact 3 - SFX Producer" ID="{D9ED96CA-A70B-44EE-90D5-0535CB072345}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Rock Impact 3 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="290807575"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Rock Impact 3 - SFX Producer" ID="{D9ED96CA-A70B-44EE-90D5-0535CB072345}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Rock Impact 5 - SFX Producer" ID="{29A3C80C-AB55-418C-BA63-AA74086FB257}" ShortID="873394635">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Rock Impact 5 - SFX Producer" ID="{BB7F7172-3332-4A02-BE5A-EB50D182A3E1}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Rock Impact 5 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="779713789"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Rock Impact 5 - SFX Producer" ID="{BB7F7172-3332-4A02-BE5A-EB50D182A3E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Rock Impact 6 - SFX Producer" ID="{1D999C8A-83E6-4D80-B1A4-8BBDF60498F2}" ShortID="1051578691">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Rock Impact 6 - SFX Producer" ID="{775CC152-18DF-45FA-BEC7-319162C7B463}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Rock Impact 6 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="387707731"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Rock Impact 6 - SFX Producer" ID="{775CC152-18DF-45FA-BEC7-319162C7B463}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Rock Impact 39 - SFX Producer" ID="{BAC21041-612B-47A1-9037-832BAAD6AE84}" ShortID="183238947">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Rock Impact 39 - SFX Producer" ID="{6E53C11B-4D83-4793-AC96-B02E54805374}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.213398252184769"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0989263420724095"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Rock Impact 39 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="392148820"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Rock Impact 39 - SFX Producer" ID="{6E53C11B-4D83-4793-AC96-B02E54805374}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Timestop" ID="{7439DE65-80C9-4455-B86B-518E7D2D312E}" ShortID="622816723">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Ice Crack Freeze - SFX Producer" ID="{86DB1EE0-7FB7-412A-9C96-13A8229C8998}" ShortID="49200921">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Ice Crack Freeze - SFX Producer" ID="{D39387B8-6E9D-4706-AA15-5534FD96B36F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.513003745318352"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.478561797752809"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00181273408239702"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.63689887640449"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Ice Crack Freeze - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="675182018"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Ice Crack Freeze - SFX Producer" ID="{D39387B8-6E9D-4706-AA15-5534FD96B36F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{12A870BD-EE69-4912-9385-58EA076909AA}" ShortID="875806725">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{393353C9-ECCA-4504-AAA5-9EC506269242}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Time Wave Ripple Slow 2 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="994689764"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{393353C9-ECCA-4504-AAA5-9EC506269242}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="ES_Time Travel Energy - SFX Producer" ID="{F62DD031-2A9B-4414-AF47-5474E30A11C5}" ShortID="448580726">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C1845405-9A76-473E-A2A1-06A2C62F6481}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Time Travel Energy - SFX Producer" ID="{A09B89A3-0DF2-4F64-A892-9ECF4FAC7A87}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="8.234911360799"/>
+										<Property Name="TrimEnd" Type="Real64" Value="16.5280199750312"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ES_Time Travel Energy - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="315832172"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{394542F9-0F43-4308-A584-E7F82AB158B8}" ShortID="513274257">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="TimeBar" ID="{9CE15D4A-2080-4273-AF63-260A81F55B6D}" WorkUnitID="{44C33F27-4C4A-41D6-A483-48E8AC7C7281}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{405F7DC7-E893-4DBD-9F3A-D5423C658127}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>40</XPos>
+																		<YPos>117</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Time Travel Energy - SFX Producer" ID="{A09B89A3-0DF2-4F64-A892-9ECF4FAC7A87}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Lever" ID="{C4FCE34C-359F-42FD-9597-A95E47B3F964}" ShortID="850458135">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Lever_True" ID="{5D0AE6CC-89F8-49D8-82F0-329F84334C33}" ShortID="14083663">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Button Lever Wood - SFX Producer" ID="{545D82A9-201D-4882-9E51-DB46B0B50744}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Button Lever Wood - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1045025300"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Lever_State" ID="{8E5A3341-A817-45F4-91F7-77B3A76CB77D}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Off" ID="{5D72E709-9E3B-4DE3-BD3A-7FB0CFF691FB}"/>
+												<CustomState Name="" ID="{1DC311EE-A35D-415E-88B0-A343BB7ABA75}" ShortID="913900213">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="On" ID="{3F1D53B3-C542-4FF3-8F6B-DDDA4A96FDA5}"/>
+												<CustomState Name="" ID="{CCC270D1-9E5E-40B1-B736-F0C4D12B90AE}" ShortID="450258057"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Button Lever Wood - SFX Producer" ID="{545D82A9-201D-4882-9E51-DB46B0B50744}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lever_False" ID="{C624E064-F289-443A-8CBA-EEF135C2E6CB}" ShortID="679451831">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-210</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Button Lever Wood - SFX Producer" ID="{D70A8603-9054-4D5B-AF94-E9FB9637F2D7}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Button Lever Wood - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1045025300"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Lever_State" ID="{8E5A3341-A817-45F4-91F7-77B3A76CB77D}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Off" ID="{5D72E709-9E3B-4DE3-BD3A-7FB0CFF691FB}"/>
+												<CustomState Name="" ID="{C4CE167A-8B98-4888-B15E-74F0BE34435A}" ShortID="72808524"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="On" ID="{3F1D53B3-C542-4FF3-8F6B-DDDA4A96FDA5}"/>
+												<CustomState Name="" ID="{3DC629C2-DE53-41DA-9031-EDC4BB3F876E}" ShortID="607729865">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Button Lever Wood - SFX Producer" ID="{D70A8603-9054-4D5B-AF94-E9FB9637F2D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Lever_False" ID="{C624E064-F289-443A-8CBA-EEF135C2E6CB}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Lever_True" ID="{5D0AE6CC-89F8-49D8-82F0-329F84334C33}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

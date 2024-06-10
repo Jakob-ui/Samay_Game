@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1B1D12CB-8BBC-4803-88D8-5C8661BF341D}" SchemaVersion="119">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{1B1D12CB-8BBC-4803-88D8-5C8661BF341D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1B1D12CB-8BBC-4803-88D8-5C8661BF341D}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Lever_State" ID="{8E5A3341-A817-45F4-91F7-77B3A76CB77D}">
+					<ChildrenList>
+						<State Name="None" ID="{31E6A71E-DA00-4B1B-9044-4F0CB6961FC8}"/>
+						<State Name="On" ID="{3F1D53B3-C542-4FF3-8F6B-DDDA4A96FDA5}"/>
+						<State Name="Off" ID="{5D72E709-9E3B-4DE3-BD3A-7FB0CFF691FB}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
