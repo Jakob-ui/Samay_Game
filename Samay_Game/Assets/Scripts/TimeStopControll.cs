@@ -19,6 +19,9 @@ public class TimeStopControll : MonoBehaviour
     private float currentValue;
     public TimeBar timeBar;
 
+    [Header("Audio")]
+    [SerializeField] AK.Wwise.Event timestop;
+
 
     void Start()
     {
@@ -54,12 +57,20 @@ public class TimeStopControll : MonoBehaviour
 
     void Update()
     {
+        bool flag = false;
         if (Input.GetKeyDown(KeyCode.Q) && !PauseMenu.isPaused || Input.GetKeyDown("joystick button 1") && !PauseMenu.isPaused)
         {
             activated = !activated;
+            flag = true;
         }
         Timestop();
         ControllTimeBar();
+
+        if (activated && flag)
+        {
+            timestop.Post(gameObject);
+            flag = false;
+        }
     }
 
     void Timestop()

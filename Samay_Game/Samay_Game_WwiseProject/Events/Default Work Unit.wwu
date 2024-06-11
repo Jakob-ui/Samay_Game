@@ -27,23 +27,65 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Footsteps" ID="{46926B5D-0EC6-4F36-A2B0-EF561E8B1E4D}">
-							<ChildrenList>
-								<Action Name="" ID="{7896C0A0-58F0-47A5-9EA5-D1E62B9D3E46}" ShortID="1018606761">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Footsteps" ID="{CBED957D-F201-4695-9243-29EE72F2976E}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Waterflow" ID="{DB2CD678-D98F-4A39-8786-52EE4E161715}">
 							<ChildrenList>
 								<Action Name="" ID="{6AA8F531-2726-4D5B-A332-61E74834D792}" ShortID="297209194">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Waterflow" ID="{FC1C75CE-1217-484F-9846-6E83E4A42037}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_FireCrackling" ID="{AA4A9C62-6809-4992-AD13-377E8FE73566}">
+							<ChildrenList>
+								<Action Name="" ID="{860AFD2F-C8DF-4B0F-8D23-6C30D1C67D58}" ShortID="404727547">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FireCrackling" ID="{952EFA86-560D-49C9-B550-6D3C93F571D7}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Waterflow" ID="{8EB0290E-4783-4982-A95E-AD2D929E06AE}">
+							<ChildrenList>
+								<Action Name="" ID="{CDDCD097-A6E6-4BAB-AD4A-8523EB20A963}" ShortID="714569346">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Waterflow" ID="{FC1C75CE-1217-484F-9846-6E83E4A42037}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Torchfire" ID="{FA45E941-9CBF-4899-BDBD-DC03AA4B220B}">
+							<ChildrenList>
+								<Action Name="" ID="{7DA60F9B-754C-4926-96E0-163AE639D81E}" ShortID="723774864">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Torchfire" ID="{56CD02C2-D99A-415A-BF0D-95842FEFFA42}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Torchfire" ID="{C7377DCE-4E1A-4B9B-9A9A-27112A24B6C0}">
+							<ChildrenList>
+								<Action Name="" ID="{844C1147-0203-4D0B-8BF7-33EB1B0F639B}" ShortID="685445825">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Torchfire" ID="{56CD02C2-D99A-415A-BF0D-95842FEFFA42}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -180,6 +222,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Falling" ID="{07B9CA86-644B-45A8-B9D3-1A5869B2B830}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Footsteps" ID="{46926B5D-0EC6-4F36-A2B0-EF561E8B1E4D}">
+							<ChildrenList>
+								<Action Name="" ID="{7896C0A0-58F0-47A5-9EA5-D1E62B9D3E46}" ShortID="1018606761">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{CBED957D-F201-4695-9243-29EE72F2976E}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

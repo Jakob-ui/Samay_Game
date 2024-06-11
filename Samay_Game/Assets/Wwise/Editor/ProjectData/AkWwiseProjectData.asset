@@ -80,7 +80,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c184dc355a0f124fa18d3cf305ec2894
     GuidInternal: 
-    m_lastTime: -8584835608296333639
+    m_lastTime: -8584835032669186731
     List:
     - name: main
       guid: 393a448f769ea3438f374a757d924ea5
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 09e02711ac3b6945b5f9a0c63b58a8a6
     GuidInternal: 
-    m_lastTime: -8584835608296333639
+    m_lastTime: -8584835032669196741
     List:
     - name: Effects
       guid: 2704ae02f6d89147b7ed8db8a063da6c
@@ -241,7 +241,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: f18a1e409465084a8bb0df1257c6e953
       Path: Events\Default Work Unit\Environment\Play_FireCrackling
-      maxAttenuation: 0
+      maxAttenuation: 10
       maxDuration: -1
       minDuration: -1
     - name: Play_Footsteps
@@ -254,13 +254,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 09e02711ac3b6945b5f9a0c63b58a8a6
-      - ElementName: Environment
+      - ElementName: Player
         ObjectType: 4
-        guid: 923446d088bcf9409f47fadec9faebf4
+        guid: 72aeb01e8584684aad03abc5af5f98c1
       - ElementName: Play_Footsteps
         ObjectType: 3
         guid: 5d6b9246c60e364fa2b0ef561e8b1e4d
-      Path: Events\Default Work Unit\Environment\Play_Footsteps
+      Path: Events\Default Work Unit\Player\Play_Footsteps
       maxAttenuation: 0
       maxDuration: 0.43580303
       minDuration: 0.16607954
@@ -362,8 +362,8 @@ MonoBehaviour:
         guid: 2790c7a814a58240a91ca3c8f47207fe
       Path: Events\Default Work Unit\Effects\Play_Lever
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.5900721
+      minDuration: 0.5226667
     - name: Play_RockRumble
       guid: 5ae5c0885bb47c409740bb5d12b1ce8d
       id: 3120591130
@@ -402,8 +402,28 @@ MonoBehaviour:
         guid: 4e32ce664365304a992a3b796e02ed77
       Path: Events\Default Work Unit\Player\Play_Timestop
       maxAttenuation: 0
-      maxDuration: 2.135086
-      minDuration: 2.135086
+      maxDuration: 0.9994157
+      minDuration: 0.9994157
+    - name: Play_Torchfire
+      guid: ce7d37c71a4e9b4b9a9a27112a24b6c0
+      id: 3738480268
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 923446d088bcf9409f47fadec9faebf4
+      - ElementName: Play_Torchfire
+        ObjectType: 3
+        guid: ce7d37c71a4e9b4b9a9a27112a24b6c0
+      Path: Events\Default Work Unit\Environment\Play_Torchfire
+      maxAttenuation: 5
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Waterflow
       guid: 78d62cdb8fd9394a878652ee4e161715
       id: 518242827
@@ -421,7 +441,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 78d62cdb8fd9394a878652ee4e161715
       Path: Events\Default Work Unit\Environment\Play_Waterflow
-      maxAttenuation: 0
+      maxAttenuation: 30
       maxDuration: -1
       minDuration: -1
     - name: Player
@@ -441,6 +461,66 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_FireCrackling
+      guid: 629c4aaa09689249ad13377e8fe73566
+      id: 1334786394
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 923446d088bcf9409f47fadec9faebf4
+      - ElementName: Stop_FireCrackling
+        ObjectType: 3
+        guid: 629c4aaa09689249ad13377e8fe73566
+      Path: Events\Default Work Unit\Environment\Stop_FireCrackling
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Torchfire
+      guid: 41e945fabf9c9948bdbddc03aa4b220b
+      id: 2705271378
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 923446d088bcf9409f47fadec9faebf4
+      - ElementName: Stop_Torchfire
+        ObjectType: 3
+        guid: 41e945fabf9c9948bdbddc03aa4b220b
+      Path: Events\Default Work Unit\Environment\Stop_Torchfire
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Waterflow
+      guid: 0e29b08e83478249a95ead2d929e06ae
+      id: 2135762577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: Environment
+        ObjectType: 4
+        guid: 923446d088bcf9409f47fadec9faebf4
+      - ElementName: Stop_Waterflow
+        ObjectType: 3
+        guid: 0e29b08e83478249a95ead2d929e06ae
+      Path: Events\Default Work Unit\Environment\Stop_Waterflow
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TimeBar
       guid: 2c1feae51180bd4b93c079aeedbe5582
       id: 3776642413
@@ -532,74 +612,8 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cb121d1bbc8b034888d85c8661bf341d
     GuidInternal: 
-    m_lastTime: -8584835614192355314
-    List:
-    - name: Lever_State
-      guid: 41335a8e17a8f44591f777b3a76cb77d
-      id: 627643701
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: cb121d1bbc8b034888d85c8661bf341d
-      - ElementName: Lever_State
-        ObjectType: 9
-        guid: 41335a8e17a8f44591f777b3a76cb77d
-      Path: States\Default Work Unit\Lever_State
-      values:
-      - name: None
-        guid: 1ea7e63100da1b4b90444f0cb6961fc8
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: cb121d1bbc8b034888d85c8661bf341d
-        - ElementName: Lever_State
-          ObjectType: 9
-          guid: 41335a8e17a8f44591f777b3a76cb77d
-        - ElementName: None
-          ObjectType: 8
-          guid: 1ea7e63100da1b4b90444f0cb6961fc8
-      - name: Off
-        guid: 09e7725d3b9ee34dbd3a7fb0cff691fb
-        id: 930712164
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: cb121d1bbc8b034888d85c8661bf341d
-        - ElementName: Lever_State
-          ObjectType: 9
-          guid: 41335a8e17a8f44591f777b3a76cb77d
-        - ElementName: Off
-          ObjectType: 8
-          guid: 09e7725d3b9ee34dbd3a7fb0cff691fb
-      - name: On
-        guid: b3531d3f42c5f34f8f6bddda4a96fda5
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: cb121d1bbc8b034888d85c8661bf341d
-        - ElementName: Lever_State
-          ObjectType: 9
-          guid: 41335a8e17a8f44591f777b3a76cb77d
-        - ElementName: On
-          ObjectType: 8
-          guid: b3531d3f42c5f34f8f6bddda4a96fda5
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8584835074428681099
+    List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -612,8 +626,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d92db45e271bb04f8cd713d7dac9b5ba
     GuidInternal: 
-    m_lastTime: -8584835910106104449
-    List: []
+    m_lastTime: -8584835074428726281
+    List:
+    - name: Lever_Switch
+      guid: 9d7ed8b50dcafc4e9034eaaf103d3788
+      id: 2794570678
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d92db45e271bb04f8cd713d7dac9b5ba
+      - ElementName: Lever_Switch
+        ObjectType: 11
+        guid: 9d7ed8b50dcafc4e9034eaaf103d3788
+      Path: Switches\Default Work Unit\Lever_Switch
+      values:
+      - name: OFF
+        guid: 9ebb146cb4e8304091c4aa29cf4602fd
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d92db45e271bb04f8cd713d7dac9b5ba
+        - ElementName: Lever_Switch
+          ObjectType: 11
+          guid: 9d7ed8b50dcafc4e9034eaaf103d3788
+        - ElementName: OFF
+          ObjectType: 10
+          guid: 9ebb146cb4e8304091c4aa29cf4602fd
+      - name: ON
+        guid: e91c4a69e7419c4bbc38ef4dfa535770
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d92db45e271bb04f8cd713d7dac9b5ba
+        - ElementName: Lever_Switch
+          ObjectType: 11
+          guid: 9d7ed8b50dcafc4e9034eaaf103d3788
+        - ElementName: ON
+          ObjectType: 10
+          guid: e91c4a69e7419c4bbc38ef4dfa535770
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -629,7 +693,7 @@ MonoBehaviour:
     m_lastTime: -8584835910106104449
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 060000000700000008000000090000000b0000000c0000000d0000000e0000000f0000001000000011000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

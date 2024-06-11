@@ -7,9 +7,13 @@
 					<ChildrenList>
 						<Sound Name="FireCrackling" ID="{952EFA86-560D-49C9-B550-6D3C93F571D7}" ShortID="156238815">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FireAttenuation" ID="{284E990B-9A74-49E5-8371-852F037912E0}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
 								</Reference>
@@ -62,6 +66,7 @@
 						</Sound>
 						<Sound Name="Waterflow" ID="{FC1C75CE-1217-484F-9846-6E83E4A42037}" ShortID="236274432">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
@@ -73,13 +78,17 @@
 										<Value>-150</Value>
 									</ValueList>
 								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="80"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-18</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="WaterAttenuation" ID="{27000485-CA05-4EA8-9ABE-91B8BCD0EC6C}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
 								</Reference>
@@ -98,6 +107,45 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="ES_SFX Waterfall - SFX Producer" ID="{ED96B76B-3DB1-4489-A74D-8F492318F076}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Torchfire" ID="{56CD02C2-D99A-415A-BF0D-95842FEFFA42}" ShortID="114833224">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>730</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Torch Attenuation" ID="{94E21AB5-F0F5-40A8-B8A8-E8B78982966D}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Fire Wood Large 2 - SFX Producer" ID="{05B183CC-3B58-4187-B629-A91C02117AF0}">
+									<Language>SFX</Language>
+									<AudioFile>ES_Fire Wood Large 2 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="780805693"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Fire Wood Large 2 - SFX Producer" ID="{05B183CC-3B58-4187-B629-A91C02117AF0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -242,6 +290,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -429,6 +478,95 @@
 								<ActiveSource Name="ES_Wind Storm 5 - SFX Producer" ID="{D9D6C82E-3F93-469B-820C-D09ACC51BADD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<BlendContainer Name="Timestop" ID="{7439DE65-80C9-4455-B86B-518E7D2D312E}" ShortID="622816723">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ES_Ice Crack Freeze - SFX Producer" ID="{86DB1EE0-7FB7-412A-9C96-13A8229C8998}" ShortID="49200921">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Ice Crack Freeze - SFX Producer" ID="{D39387B8-6E9D-4706-AA15-5534FD96B36F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.513003745318352"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.478561797752809"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00181273408239702"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.801228464419472"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Ice Crack Freeze - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="675182018"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Ice Crack Freeze - SFX Producer" ID="{D39387B8-6E9D-4706-AA15-5534FD96B36F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{12A870BD-EE69-4912-9385-58EA076909AA}" ShortID="875806725">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{393353C9-ECCA-4504-AAA5-9EC506269242}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.314616729088639"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.678222222222222"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Time Wave Ripple Slow 2 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="994689764"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{393353C9-ECCA-4504-AAA5-9EC506269242}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Effects" ID="{6C067DEB-CF3A-4385-B405-C7CD97935374}" ShortID="686843365">
@@ -648,83 +786,6 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
-						<BlendContainer Name="Timestop" ID="{7439DE65-80C9-4455-B86B-518E7D2D312E}" ShortID="622816723">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-11</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="ES_Ice Crack Freeze - SFX Producer" ID="{86DB1EE0-7FB7-412A-9C96-13A8229C8998}" ShortID="49200921">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.5</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ES_Ice Crack Freeze - SFX Producer" ID="{D39387B8-6E9D-4706-AA15-5534FD96B36F}">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.513003745318352"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.478561797752809"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.00181273408239702"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.63689887640449"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ES_Ice Crack Freeze - SFX Producer.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="675182018"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ES_Ice Crack Freeze - SFX Producer" ID="{D39387B8-6E9D-4706-AA15-5534FD96B36F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{12A870BD-EE69-4912-9385-58EA076909AA}" ShortID="875806725">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{393353C9-ECCA-4504-AAA5-9EC506269242}">
-											<Language>SFX</Language>
-											<AudioFile>ES_Time Wave Ripple Slow 2 - SFX Producer.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="994689764"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ES_Time Wave Ripple Slow 2 - SFX Producer" ID="{393353C9-ECCA-4504-AAA5-9EC506269242}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</BlendContainer>
 						<Sound Name="ES_Time Travel Energy - SFX Producer" ID="{F62DD031-2A9B-4414-AF47-5474E30A11C5}" ShortID="448580726">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -812,12 +873,21 @@
 							</ActiveSourceList>
 						</Sound>
 						<SwitchContainer Name="Lever" ID="{C4FCE34C-359F-42FD-9597-A95E47B3F964}" ShortID="850458135">
+							<PropertyList>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="ON" ID="{694A1CE9-41E7-4B9C-BC38-EF4DFA535770}" WorkUnitID="{5EB42DD9-1B27-4FB0-8CD7-13D7DAC9B5BA}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Lever_Switch" ID="{B5D87E9D-CA0D-4EFC-9034-EAAF103D3788}" WorkUnitID="{5EB42DD9-1B27-4FB0-8CD7-13D7DAC9B5BA}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -839,27 +909,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Lever_State" ID="{8E5A3341-A817-45F4-91F7-77B3A76CB77D}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Off" ID="{5D72E709-9E3B-4DE3-BD3A-7FB0CFF691FB}"/>
-												<CustomState Name="" ID="{1DC311EE-A35D-415E-88B0-A343BB7ABA75}" ShortID="913900213">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-108"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="On" ID="{3F1D53B3-C542-4FF3-8F6B-DDDA4A96FDA5}"/>
-												<CustomState Name="" ID="{CCC270D1-9E5E-40B1-B736-F0C4D12B90AE}" ShortID="450258057"/>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="ES_Button Lever Wood - SFX Producer" ID="{545D82A9-201D-4882-9E51-DB46B0B50744}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -889,27 +938,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Lever_State" ID="{8E5A3341-A817-45F4-91F7-77B3A76CB77D}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Off" ID="{5D72E709-9E3B-4DE3-BD3A-7FB0CFF691FB}"/>
-												<CustomState Name="" ID="{C4CE167A-8B98-4888-B15E-74F0BE34435A}" ShortID="72808524"/>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="On" ID="{3F1D53B3-C542-4FF3-8F6B-DDDA4A96FDA5}"/>
-												<CustomState Name="" ID="{3DC629C2-DE53-41DA-9031-EDC4BB3F876E}" ShortID="607729865">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-108"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="ES_Button Lever Wood - SFX Producer" ID="{D70A8603-9054-4D5B-AF94-E9FB9637F2D7}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -924,6 +952,20 @@
 										<ItemRef Name="Lever_True" ID="{5D0AE6CC-89F8-49D8-82F0-329F84334C33}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="OFF" ID="{6C14BB9E-E8B4-4030-91C4-AA29CF4602FD}"/>
+										<ItemList>
+											<ItemRef Name="Lever_False" ID="{C624E064-F289-443A-8CBA-EEF135C2E6CB}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="ON" ID="{694A1CE9-41E7-4B9C-BC38-EF4DFA535770}"/>
+										<ItemList>
+											<ItemRef Name="Lever_True" ID="{5D0AE6CC-89F8-49D8-82F0-329F84334C33}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>

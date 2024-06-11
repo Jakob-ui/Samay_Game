@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FA8BEB38-B505-2A1E-F113-013C3856F71E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1B25D456-FA00-076B-2CD5-7EF4D7AB1A0B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -26,23 +26,22 @@
 				<GameParameter Id="640949982" Name="Speed"/>
 				<GameParameter Id="3776642413" Name="TimeBar"/>
 			</GameParameters>
-			<StateGroups>
-				<StateGroup Id="627643701" Name="Lever_State">
-					<States>
-						<State Id="748895195" Name="None"/>
-						<State Id="930712164" Name="Off"/>
-						<State Id="1651971902" Name="On"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="2794570678" Name="Lever_Switch">
+					<Switches>
+						<Switch Id="930712164" Name="OFF"/>
+						<Switch Id="1651971902" Name="ON"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{C267559B-A8CF-4FDC-A937-06EEC63E82FF}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{4C82AC4C-AAED-2168-4B28-591B1DF3D613}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
 				<File Id="94354583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_D4C5B7C6.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_8DA967BA.wem</CachePath>
 				</File>
 				<File Id="152339487" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Cave Ambience Drips - SFX Producer.wav</ShortName>
@@ -54,11 +53,11 @@
 				</File>
 				<File Id="185391235" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_8C5FE702.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_EDA4D35C.wem</CachePath>
 				</File>
 				<File Id="273947239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Stone Drag Object 3 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Stone Drag Object 3 - SFX Producer_20A8A781.wem</CachePath>
+					<CachePath>SFX/ES_Stone Drag Object 3 - SFX Producer_E69A069B.wem</CachePath>
 				</File>
 				<File Id="290807575" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Rock Impact 3 - SFX Producer.wav</ShortName>
@@ -66,11 +65,11 @@
 				</File>
 				<File Id="315832172" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Time Travel Energy - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Time Travel Energy - SFX Producer_1060BF7D.wem</CachePath>
+					<CachePath>SFX/ES_Time Travel Energy - SFX Producer_05FD7FD5.wem</CachePath>
 				</File>
 				<File Id="327486410" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_51B863EE.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_343DC2CE.wem</CachePath>
 				</File>
 				<File Id="340851691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Crash Rock Debris 19 - SFX Producer.wav</ShortName>
@@ -94,7 +93,7 @@
 				</File>
 				<File Id="392148820" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Rock Impact 39 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Rock Impact 39 - SFX Producer_9DC4111A.wem</CachePath>
+					<CachePath>SFX/ES_Rock Impact 39 - SFX Producer_65A8617A.wem</CachePath>
 				</File>
 				<File Id="505168709" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_SFX Waterfall - SFX Producer.wav</ShortName>
@@ -102,23 +101,27 @@
 				</File>
 				<File Id="515103889" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_E6C614BA.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_7671360D.wem</CachePath>
 				</File>
 				<File Id="646025256" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Dirt Impacts 54 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Dirt Impacts 54 - SFX Producer_5573D3F9.wem</CachePath>
+					<CachePath>SFX/ES_Dirt Impacts 54 - SFX Producer_05415FD2.wem</CachePath>
 				</File>
 				<File Id="658470552" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Wind Storm 5 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Wind Storm 5 - SFX Producer_BD9C88F8.wem</CachePath>
+					<CachePath>SFX/ES_Wind Storm 5 - SFX Producer_E3C063DC.wem</CachePath>
 				</File>
 				<File Id="675182018" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Ice Crack Freeze - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Ice Crack Freeze - SFX Producer_D69EEF14.wem</CachePath>
+					<CachePath>SFX/ES_Ice Crack Freeze - SFX Producer_1796410A.wem</CachePath>
 				</File>
 				<File Id="779713789" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Rock Impact 5 - SFX Producer.wav</ShortName>
 					<CachePath>SFX/ES_Rock Impact 5 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="780805693" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Fire Wood Large 2 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Fire Wood Large 2 - SFX Producer_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="893283590" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Jungle Ambience 14 - SFX Producer.wav</ShortName>
@@ -126,11 +129,15 @@
 				</File>
 				<File Id="994689764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Time Wave Ripple Slow 2 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Time Wave Ripple Slow 2 - SFX Producer_818F3B66.wem</CachePath>
+					<CachePath>SFX/ES_Time Wave Ripple Slow 2 - SFX Producer_C98B58BB.wem</CachePath>
 				</File>
 				<File Id="1005148804" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Rock Debris Spill 1 - SFX Producer.wav</ShortName>
 					<CachePath>SFX/ES_Rock Debris Spill 1 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1045025300" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Button Lever Wood - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Button Lever Wood - SFX Producer_818F3B66.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -151,7 +158,7 @@
 						<MediaRef Id="658470552"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2550218880" Name="Play_FireCrackling" DurationType="Infinite">
+				<Event Id="2550218880" Name="Play_FireCrackling" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="348359839"/>
 					</MediaRefs>
@@ -184,7 +191,22 @@
 						<MediaRef Id="893283590"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3196500978" Name="Play_Lever" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3196500978" Name="Play_Lever" DurationType="OneShot" DurationMin="0.5226667" DurationMax="0.5900721">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2794570678" Id="930712164"/>
+							<MediaRefs>
+								<MediaRef Id="1045025300"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2794570678" Id="1651971902" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="1045025300"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3120591130" Name="Play_RockRumble" DurationType="OneShot" DurationMin="4.741773" DurationMax="4.741773">
 					<MediaRefs>
 						<MediaRef Id="290807575"/>
@@ -195,17 +217,25 @@
 						<MediaRef Id="1005148804"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="110520045" Name="Play_Timestop" DurationType="OneShot" DurationMin="2.135086" DurationMax="2.135086">
+				<Event Id="110520045" Name="Play_Timestop" DurationType="OneShot" DurationMin="0.9994157" DurationMax="0.9994157">
 					<MediaRefs>
 						<MediaRef Id="675182018"/>
 						<MediaRef Id="994689764"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="518242827" Name="Play_Waterflow" DurationType="Infinite">
+				<Event Id="3738480268" Name="Play_Torchfire" MaxAttenuation="5" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="780805693"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="518242827" Name="Play_Waterflow" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="505168709"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1334786394" Name="Stop_FireCrackling" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2705271378" Name="Stop_Torchfire" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2135762577" Name="Stop_Waterflow" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3776642413" Name="TimeBar" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="315832172"/>
@@ -215,7 +245,15 @@
 			<GameParameters>
 				<GameParameter Id="3776642413" Name="TimeBar"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="2794570678" Name="Lever_Switch">
+					<Switches>
+						<Switch Id="930712164" Name="OFF"/>
+						<Switch Id="1651971902" Name="ON"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9FC3BBBC-513F-75D9-1D3F-F1C7F7D29DB6}</FileHash>
+	<FileHash>{158C9B91-AEE2-FB2C-CC26-EA7FFA5E2BBA}</FileHash>
 </SoundBanksInfo>

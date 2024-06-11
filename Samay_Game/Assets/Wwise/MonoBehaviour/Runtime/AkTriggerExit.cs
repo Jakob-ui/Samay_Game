@@ -1,4 +1,4 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+#if !(UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
 /*******************************************************************************
 The content of this file includes portions of the proprietary AUDIOKINETIC Wwise
 Technology released in source code form as part of the game integration package.
@@ -17,7 +17,11 @@ Copyright (c) 2024 Audiokinetic Inc.
 *******************************************************************************/
 public class AkTriggerExit : AkTriggerBase
 {
-	public UnityEngine.GameObject triggerObject = null;
+	private UnityEngine.GameObject triggerObject = null;
+	void Start()
+	{
+		triggerObject = UnityEngine.GameObject.FindWithTag("Player");
+	}
 
 	private void OnTriggerExit(UnityEngine.Collider in_other)
 	{

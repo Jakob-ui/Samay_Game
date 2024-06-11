@@ -6,12 +6,16 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
+    [Header("Controlls")]
     [SerializeField] private Button resume;
     [SerializeField] private Button quit;
     [SerializeField] private Button menu;
     public SceneSwitch scene;
     public GameObject pauseMenuPanel;
     public static bool isPaused = false;
+
+    [Header("Audio")]
+    [SerializeField] AK.Wwise.Event click;
 
     void Start()
     {
@@ -39,7 +43,8 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-
+        AkSoundEngine.WakeupFromSuspend();
+        click.Post(gameObject);
         Debug.Log("Resuming game...");
         pauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;
@@ -50,6 +55,7 @@ public class PauseMenu : MonoBehaviour
 
     void PauseGame()
     {
+        AkSoundEngine.Suspend();
         Debug.Log("Pausing game...");
         pauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
@@ -60,6 +66,7 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        click.Post(gameObject);
         Debug.Log("Quitting game...");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
@@ -69,6 +76,8 @@ public class PauseMenu : MonoBehaviour
     }
     public void Menu()
     {
+        AkSoundEngine.WakeupFromSuspend();
+        click.Post(gameObject);
         Debug.Log("Resuming game...");
         pauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;

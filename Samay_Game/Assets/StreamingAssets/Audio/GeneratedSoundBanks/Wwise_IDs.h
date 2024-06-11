@@ -26,25 +26,28 @@ namespace AK
         static const AkUniqueID PLAY_LEVER = 3196500978U;
         static const AkUniqueID PLAY_ROCKRUMBLE = 3120591130U;
         static const AkUniqueID PLAY_TIMESTOP = 110520045U;
+        static const AkUniqueID PLAY_TORCHFIRE = 3738480268U;
         static const AkUniqueID PLAY_WATERFLOW = 518242827U;
+        static const AkUniqueID STOP_FIRECRACKLING = 1334786394U;
+        static const AkUniqueID STOP_TORCHFIRE = 2705271378U;
+        static const AkUniqueID STOP_WATERFLOW = 2135762577U;
         static const AkUniqueID TIMEBAR = 3776642413U;
     } // namespace EVENTS
 
-    namespace STATES
+    namespace SWITCHES
     {
-        namespace LEVER_STATE
+        namespace LEVER_SWITCH
         {
-            static const AkUniqueID GROUP = 627643701U;
+            static const AkUniqueID GROUP = 2794570678U;
 
-            namespace STATE
+            namespace SWITCH
             {
-                static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OFF = 930712164U;
                 static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace LEVER_STATE
+            } // namespace SWITCH
+        } // namespace LEVER_SWITCH
 
-    } // namespace STATES
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

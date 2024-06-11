@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform cameraTransform;
     private bool toggleControllerSprint = false;
 
+
     [Header("Character Movement")]
     private CharacterController characterController;
     private float ySpeed;
@@ -32,8 +33,13 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Everything else")]
     [SerializeField] private Collider wasser;
-
     private Animator animator;
+
+    [Header("Audio")]
+    [SerializeField] AK.Wwise.Event footsteps;
+    private bool footstepplay = false;
+    private float lastfootsteptime = 0f;
+    [SerializeField] private AK.Wwise.Event jump;
 
 
     void Start()
@@ -41,12 +47,16 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
+        lastfootsteptime = Time.time;
     }
 
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
+        Vector3 horizontalVelocity = characterController.velocity;
+        horizontalVelocity = new Vector3(characterController.velocity.x, 0, characterController.velocity.z);
+        float horizontalSpeed = horizontalVelocity.magnitude;
 
         Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
         float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
@@ -55,6 +65,19 @@ public class PlayerMovement : MonoBehaviour
         {
             inputMagnitude += 0.5f;
         }
+
+        //Audio
+        if (horizontalSpeed > 0 && !footstepplay && !isJumping)
+        {
+            footsteps.Post(gameObject);
+            lastfootsteptime = Time.time;
+            footstepplay = true;
+        }
+        else if (horizontalSpeed > 1 && Time.time - lastfootsteptime > 130 / horizontalSpeed * Time.deltaTime)
+        {
+            footstepplay = false;
+        }
+
 
         if (Input.GetKeyDown("joystick button 8"))
         {
@@ -72,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         // walk blend 
         //if (Input.GetKey(KeyCode.RightShift))
         //{
-          //  inputMagnitude /= 2;
+        //  inputMagnitude /= 2;
         //}
         //animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
@@ -90,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") || Input.GetKeyDown("joystick button 0"))
         {
             jumpButtonPressedTime = Time.time;
+            jump.Post(gameObject);
         }
 
 
@@ -119,9 +143,9 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsGrounded", false);
             isGrounded = false;
 
-            if ((isJumping && ySpeed <0) || ySpeed < 0)
+            if ((isJumping && ySpeed < 0) || ySpeed < 0)
             {
-                   animator.SetBool("IsFalling", true);
+                animator.SetBool("IsFalling", true);
             }
         }
 
