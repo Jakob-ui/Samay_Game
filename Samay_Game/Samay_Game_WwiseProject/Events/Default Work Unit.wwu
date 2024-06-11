@@ -145,6 +145,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Samay_Cutscene_music" ID="{38F83FB4-33CA-4123-97E8-F0F2941B967C}">
+							<ChildrenList>
+								<Action Name="" ID="{CCCF50FE-C4CF-49B3-837C-86C9CAC5913D}" ShortID="70420419">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Samay_Cutscene_music" ID="{3BF3E9DD-ED9A-4196-8ED7-EB06B8B1B5DD}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Effects" ID="{02AE0427-D8F6-4791-B7ED-8DB8A063DA6C}" ShortID="54224746">
@@ -176,18 +187,7 @@
 								<Action Name="" ID="{97C81BFC-2AE1-418D-8371-4701C52AC4B9}" ShortID="185632295">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="ES_Time Travel Energy - SFX Producer" ID="{F62DD031-2A9B-4414-AF47-5474E30A11C5}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Lever" ID="{A8C79027-A514-4082-A91C-A3C8F47207FE}">
-							<ChildrenList>
-								<Action Name="" ID="{DB179DBF-E0A5-4951-BB5B-D9395F8770CD}" ShortID="857071201">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Lever" ID="{C4FCE34C-359F-42FD-9597-A95E47B3F964}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+											<ObjectRef Name="TimeEnergy" ID="{F62DD031-2A9B-4414-AF47-5474E30A11C5}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -237,12 +237,56 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Stone_Door" ID="{AD64DD78-AF02-4B62-A8F1-ECD26B567C00}">
+						<Event Name="Play_Lever_True" ID="{4E36B6C0-AB21-4BB5-BA15-540D3245D655}">
 							<ChildrenList>
-								<Action Name="" ID="{219AD8CE-48E9-4D7B-A76F-304F8A1EA5A0}" ShortID="439153721">
+								<Action Name="" ID="{32297C7A-E412-46B0-AD2B-90CCBD95C6AF}" ShortID="614527298">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Stone Door" ID="{C3FBE229-8964-4006-A372-CDABCA5CB1A2}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+											<ObjectRef Name="Lever_True" ID="{5D0AE6CC-89F8-49D8-82F0-329F84334C33}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Lever_False" ID="{E905BD9F-DDE8-4A71-82E5-02C0CA9F3B6D}">
+							<ChildrenList>
+								<Action Name="" ID="{ED617521-0C6D-4B4A-91FA-842011A5CA33}" ShortID="618082770">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lever_False" ID="{C624E064-F289-443A-8CBA-EEF135C2E6CB}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_success" ID="{261932B9-4813-4402-999C-F1B1A3A16487}">
+							<ChildrenList>
+								<Action Name="" ID="{24CC588F-E360-4366-A910-1DEA7FC0443A}" ShortID="355216995">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="success" ID="{763D4898-2AC6-4A72-ACFE-7E4B95C77045}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stone_Door_Open" ID="{5A5EA654-CCC5-4938-A73C-D855F3EC182D}">
+							<ChildrenList>
+								<Action Name="" ID="{1FB0DA85-E574-4688-A535-874010BAEB49}" ShortID="342027431">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stone Door Open" ID="{87B8199D-18C5-4D56-9EDC-F292489B54FB}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stone_Door_Close" ID="{1DFA12BE-8435-4624-841E-551BB198C6D2}">
+							<ChildrenList>
+								<Action Name="" ID="{2F87DC94-0671-43C1-9575-FF870D1C5C6E}" ShortID="366995879">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stone Door Close" ID="{1D9E0DA2-390E-4D6B-B243-EE202AF017E1}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

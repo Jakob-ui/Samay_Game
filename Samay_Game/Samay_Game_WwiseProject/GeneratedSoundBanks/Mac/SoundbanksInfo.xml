@@ -26,29 +26,18 @@
 				<GameParameter Id="640949982" Name="Speed"/>
 				<GameParameter Id="3776642413" Name="TimeBar"/>
 			</GameParameters>
-			<SwitchGroups>
-				<SwitchGroup Id="1877847629" Name="Door">
-					<Switches>
-						<Switch Id="782826392" Name="Default"/>
-						<Switch Id="1451272583" Name="Close"/>
-						<Switch Id="3072142513" Name="Open"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="2794570678" Name="Lever_Switch">
-					<Switches>
-						<Switch Id="930712164" Name="OFF"/>
-						<Switch Id="1651971902" Name="ON"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{68E4452C-A3CD-9B2E-494F-D74D0F8E5750}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BC54CBAC-23C6-C3A2-1BD8-BCE70F26795A}">
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<Media>
+				<File Id="51487557" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Samay_Cutscene_music.wav</ShortName>
+					<CachePath>SFX/Samay_Cutscene_music_818F3B66.wem</CachePath>
+				</File>
 				<File Id="94354583" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_15445552.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_357A8783.wem</CachePath>
 				</File>
 				<File Id="152339487" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Cave Ambience Drips - SFX Producer.wav</ShortName>
@@ -64,11 +53,11 @@
 				</File>
 				<File Id="185391235" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_61136F06.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_2E154988.wem</CachePath>
 				</File>
 				<File Id="207516780" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Stone Door Open 2 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Stone Door Open 2 - SFX Producer_1DD0C1E6.wem</CachePath>
+					<CachePath>SFX/ES_Stone Door Open 2 - SFX Producer_30148950.wem</CachePath>
 				</File>
 				<File Id="273947239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Stone Drag Object 3 - SFX Producer.wav</ShortName>
@@ -84,7 +73,7 @@
 				</File>
 				<File Id="327486410" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_0C1A447F.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_899FB81E.wem</CachePath>
 				</File>
 				<File Id="340851691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Crash Rock Debris 19 - SFX Producer.wav</ShortName>
@@ -112,7 +101,11 @@
 				</File>
 				<File Id="434251246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Stone Drag Object 3 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Stone Drag Object 3 - SFX Producer_BBA99F60.wem</CachePath>
+					<CachePath>SFX/ES_Stone Drag Object 3 - SFX Producer_8E77BE04.wem</CachePath>
+				</File>
+				<File Id="500319183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>success.wav</ShortName>
+					<CachePath>SFX/success_818F3B66.wem</CachePath>
 				</File>
 				<File Id="505168709" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_SFX Waterfall - SFX Producer.wav</ShortName>
@@ -120,7 +113,7 @@
 				</File>
 				<File Id="515103889" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_7447A075.wem</CachePath>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_F8DB71D4.wem</CachePath>
 				</File>
 				<File Id="646025256" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Dirt Impacts 54 - SFX Producer.wav</ShortName>
@@ -148,7 +141,7 @@
 				</File>
 				<File Id="981508221" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Wind Storm 7 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Wind Storm 7 - SFX Producer_FCFAEF61.wem</CachePath>
+					<CachePath>SFX/ES_Wind Storm 7 - SFX Producer_8CBC26F9.wem</CachePath>
 				</File>
 				<File Id="994689764" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Time Wave Ripple Slow 2 - SFX Producer.wav</ShortName>
@@ -164,7 +157,7 @@
 				</File>
 				<File Id="1073300278" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ES_Stone Door Open 2 - SFX Producer.wav</ShortName>
-					<CachePath>SFX/ES_Stone Door Open 2 - SFX Producer_BAF87D62.wem</CachePath>
+					<CachePath>SFX/ES_Stone Door Open 2 - SFX Producer_626AE0DF.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -218,21 +211,15 @@
 						<MediaRef Id="893283590"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3196500978" Name="Play_Lever" DurationType="OneShot" DurationMin="0.5226667" DurationMax="0.5900721">
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="2794570678" Id="930712164"/>
-							<MediaRefs>
-								<MediaRef Id="1045025300"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="2794570678" Id="1651971902" Default="true"/>
-							<MediaRefs>
-								<MediaRef Id="1045025300"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
+				<Event Id="1858556990" Name="Play_Lever_False" DurationType="OneShot" DurationMin="0.5900721" DurationMax="0.5900721">
+					<MediaRefs>
+						<MediaRef Id="1045025300"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4279771213" Name="Play_Lever_True" DurationType="OneShot" DurationMin="0.5226667" DurationMax="0.5226667">
+					<MediaRefs>
+						<MediaRef Id="1045025300"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="2958693236" Name="Play_Pendulum" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.10876" DurationMax="1.10876">
 					<MediaRefs>
@@ -260,26 +247,30 @@
 						<MediaRef Id="1005148804"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2377306268" Name="Play_Samay_Cutscene_music" DurationType="OneShot" DurationMin="30.058666" DurationMax="30.058666">
+					<MediaRefs>
+						<MediaRef Id="51487557"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="996860547" Name="Play_Spikes" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.7887863" DurationMax="1.7887863">
 					<MediaRefs>
 						<MediaRef Id="159096066"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1503332828" Name="Play_Stone_Door" DurationType="Infinite">
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1877847629" Id="1451272583"/>
-							<MediaRefs>
-								<MediaRef Id="1073300278"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="1877847629" Id="3072142513"/>
-							<MediaRefs>
-								<MediaRef Id="207516780"/>
-							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
+				<Event Id="820821253" Name="Play_Stone_Door_Close" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1073300278"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="224478607" Name="Play_Stone_Door_Open" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="207516780"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3943614907" Name="Play_success" DurationType="OneShot" DurationMin="3.768" DurationMax="3.768">
+					<MediaRefs>
+						<MediaRef Id="500319183"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="110520045" Name="Play_Timestop" DurationType="OneShot" DurationMin="0.9994157" DurationMax="0.9994157">
 					<MediaRefs>
@@ -310,22 +301,7 @@
 			<GameParameters>
 				<GameParameter Id="3776642413" Name="TimeBar"/>
 			</GameParameters>
-			<SwitchGroups>
-				<SwitchGroup Id="1877847629" Name="Door">
-					<Switches>
-						<Switch Id="782826392" Name="Default"/>
-						<Switch Id="1451272583" Name="Close"/>
-						<Switch Id="3072142513" Name="Open"/>
-					</Switches>
-				</SwitchGroup>
-				<SwitchGroup Id="2794570678" Name="Lever_Switch">
-					<Switches>
-						<Switch Id="930712164" Name="OFF"/>
-						<Switch Id="1651971902" Name="ON"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4DA111DF-9D41-D3B9-D1C4-35DF96B80D88}</FileHash>
+	<FileHash>{64B09F9B-B838-50A4-3265-D6035376C6C5}</FileHash>
 </SoundBanksInfo>

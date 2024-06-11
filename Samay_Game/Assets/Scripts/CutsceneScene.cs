@@ -7,11 +7,13 @@ public class CutsceneScene : MonoBehaviour
     public float changeTime;
     public SceneSwitch scene;
     public FadeInOut fade;
+    [SerializeField] AK.Wwise.Event song;
 
     void Start()
     {
         fade = FindObjectOfType<FadeInOut>();
         StartCoroutine(Fade());
+        song.Post(gameObject);
     }
     void Update()
     {

@@ -80,7 +80,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: c184dc355a0f124fa18d3cf305ec2894
     GuidInternal: 
-    m_lastTime: -8584834841845634357
+    m_lastTime: -8584834715136785940
     List:
     - name: main
       guid: 393a448f769ea3438f374a757d924ea5
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 09e02711ac3b6945b5f9a0c63b58a8a6
     GuidInternal: 
-    m_lastTime: -8584834841845608509
+    m_lastTime: -8584834697094212318
     List:
     - name: Effects
       guid: 2704ae02f6d89147b7ed8db8a063da6c
@@ -344,9 +344,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Lever
-      guid: 2790c7a814a58240a91ca3c8f47207fe
-      id: 3196500978
+    - name: Play_Lever_False
+      guid: 9fbd05e9e8dd714a82e502c0ca9f3b6d
+      id: 1858556990
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -357,12 +357,32 @@ MonoBehaviour:
       - ElementName: Effects
         ObjectType: 4
         guid: 2704ae02f6d89147b7ed8db8a063da6c
-      - ElementName: Play_Lever
+      - ElementName: Play_Lever_False
         ObjectType: 3
-        guid: 2790c7a814a58240a91ca3c8f47207fe
-      Path: Events\Default Work Unit\Effects\Play_Lever
+        guid: 9fbd05e9e8dd714a82e502c0ca9f3b6d
+      Path: Events\Default Work Unit\Effects\Play_Lever_False
       maxAttenuation: 0
       maxDuration: 0.5900721
+      minDuration: 0.5900721
+    - name: Play_Lever_True
+      guid: c0b6364e21abb54bba15540d3245d655
+      id: 4279771213
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: Effects
+        ObjectType: 4
+        guid: 2704ae02f6d89147b7ed8db8a063da6c
+      - ElementName: Play_Lever_True
+        ObjectType: 3
+        guid: c0b6364e21abb54bba15540d3245d655
+      Path: Events\Default Work Unit\Effects\Play_Lever_True
+      maxAttenuation: 0
+      maxDuration: 0.5226667
       minDuration: 0.5226667
     - name: Play_Pendulum
       guid: 1a981f46fcb3824ca8792069383fcf80
@@ -444,6 +464,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 4.741773
       minDuration: 4.741773
+    - name: Play_Samay_Cutscene_music
+      guid: b43ff838ca33234197e8f0f2941b967c
+      id: 2377306268
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: UI
+        ObjectType: 4
+        guid: cbb90c0bc5c53a43b5104846eac986a6
+      - ElementName: Play_Samay_Cutscene_music
+        ObjectType: 3
+        guid: b43ff838ca33234197e8f0f2941b967c
+      Path: Events\Default Work Unit\UI\Play_Samay_Cutscene_music
+      maxAttenuation: 0
+      maxDuration: 30.058666
+      minDuration: 30.058666
     - name: Play_Spikes
       guid: baaf9b9b3cda0b44a800aa5b0c931462
       id: 996860547
@@ -464,9 +504,9 @@ MonoBehaviour:
       maxAttenuation: 20
       maxDuration: 1.7887863
       minDuration: 1.7887863
-    - name: Play_Stone_Door
-      guid: 78dd64ad02af624ba8f1ecd26b567c00
-      id: 1503332828
+    - name: Play_Stone_Door_Close
+      guid: be12fa1d35842446841e551bb198c6d2
+      id: 820821253
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -477,13 +517,53 @@ MonoBehaviour:
       - ElementName: Effects
         ObjectType: 4
         guid: 2704ae02f6d89147b7ed8db8a063da6c
-      - ElementName: Play_Stone_Door
+      - ElementName: Play_Stone_Door_Close
         ObjectType: 3
-        guid: 78dd64ad02af624ba8f1ecd26b567c00
-      Path: Events\Default Work Unit\Effects\Play_Stone_Door
+        guid: be12fa1d35842446841e551bb198c6d2
+      Path: Events\Default Work Unit\Effects\Play_Stone_Door_Close
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Stone_Door_Open
+      guid: 54a65e5ac5cc3849a73cd855f3ec182d
+      id: 224478607
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: Effects
+        ObjectType: 4
+        guid: 2704ae02f6d89147b7ed8db8a063da6c
+      - ElementName: Play_Stone_Door_Open
+        ObjectType: 3
+        guid: 54a65e5ac5cc3849a73cd855f3ec182d
+      Path: Events\Default Work Unit\Effects\Play_Stone_Door_Open
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_success
+      guid: b932192613480244999cf1b1a3a16487
+      id: 3943614907
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 09e02711ac3b6945b5f9a0c63b58a8a6
+      - ElementName: Effects
+        ObjectType: 4
+        guid: 2704ae02f6d89147b7ed8db8a063da6c
+      - ElementName: Play_success
+        ObjectType: 3
+        guid: b932192613480244999cf1b1a3a16487
+      Path: Events\Default Work Unit\Effects\Play_success
+      maxAttenuation: 0
+      maxDuration: 3.768
+      minDuration: 3.768
     - name: Play_Timestop
       guid: 4e32ce664365304a992a3b796e02ed77
       id: 110520045
@@ -690,7 +770,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 273fc3444a4cd641a48348e8ac7c7281
     GuidInternal: 
-    m_lastTime: -8584835614192345261
+    m_lastTime: -8584834676071505649
     List:
     - name: Speed
       guid: cc59800681a78d439bdcc7317c0546de
@@ -732,7 +812,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cb121d1bbc8b034888d85c8661bf341d
     GuidInternal: 
-    m_lastTime: -8584835074428681099
+    m_lastTime: -8584834715136801235
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -746,124 +826,8 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: d92db45e271bb04f8cd713d7dac9b5ba
     GuidInternal: 
-    m_lastTime: -8584834841845598460
-    List:
-    - name: Door
-      guid: c9bc09a1be787d42bfdc92286f415007
-      id: 1877847629
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d92db45e271bb04f8cd713d7dac9b5ba
-      - ElementName: Door
-        ObjectType: 11
-        guid: c9bc09a1be787d42bfdc92286f415007
-      Path: Switches\Default Work Unit\Door
-      values:
-      - name: Close
-        guid: 9fea920832685646af9564a1909e8118
-        id: 1451272583
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d92db45e271bb04f8cd713d7dac9b5ba
-        - ElementName: Door
-          ObjectType: 11
-          guid: c9bc09a1be787d42bfdc92286f415007
-        - ElementName: Close
-          ObjectType: 10
-          guid: 9fea920832685646af9564a1909e8118
-      - name: Default
-        guid: fabb91a4b3593b42a6e29e61bf42b73d
-        id: 782826392
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d92db45e271bb04f8cd713d7dac9b5ba
-        - ElementName: Door
-          ObjectType: 11
-          guid: c9bc09a1be787d42bfdc92286f415007
-        - ElementName: Default
-          ObjectType: 10
-          guid: fabb91a4b3593b42a6e29e61bf42b73d
-      - name: Open
-        guid: f1b8d4635c1f624288ffdc30c9a2b1cb
-        id: 3072142513
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d92db45e271bb04f8cd713d7dac9b5ba
-        - ElementName: Door
-          ObjectType: 11
-          guid: c9bc09a1be787d42bfdc92286f415007
-        - ElementName: Open
-          ObjectType: 10
-          guid: f1b8d4635c1f624288ffdc30c9a2b1cb
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: Lever_Switch
-      guid: 9d7ed8b50dcafc4e9034eaaf103d3788
-      id: 2794570678
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: d92db45e271bb04f8cd713d7dac9b5ba
-      - ElementName: Lever_Switch
-        ObjectType: 11
-        guid: 9d7ed8b50dcafc4e9034eaaf103d3788
-      Path: Switches\Default Work Unit\Lever_Switch
-      values:
-      - name: OFF
-        guid: 9ebb146cb4e8304091c4aa29cf4602fd
-        id: 930712164
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d92db45e271bb04f8cd713d7dac9b5ba
-        - ElementName: Lever_Switch
-          ObjectType: 11
-          guid: 9d7ed8b50dcafc4e9034eaaf103d3788
-        - ElementName: OFF
-          ObjectType: 10
-          guid: 9ebb146cb4e8304091c4aa29cf4602fd
-      - name: ON
-        guid: e91c4a69e7419c4bbc38ef4dfa535770
-        id: 1651971902
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: d92db45e271bb04f8cd713d7dac9b5ba
-        - ElementName: Lever_Switch
-          ObjectType: 11
-          guid: 9d7ed8b50dcafc4e9034eaaf103d3788
-        - ElementName: ON
-          ObjectType: 10
-          guid: e91c4a69e7419c4bbc38ef4dfa535770
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8584834723973701871
+    List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -879,7 +843,7 @@ MonoBehaviour:
     m_lastTime: -8584838993179131341
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000016000000170000001b0000001c0000001d00000024000000
+  ExpandedWaapiItemIds: 0600000007000000080000000b0000000c0000000d0000000e000000100000001200000013000000160000001700000018000000190000001b0000001d00000024000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

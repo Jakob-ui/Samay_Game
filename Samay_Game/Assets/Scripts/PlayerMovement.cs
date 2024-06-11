@@ -29,10 +29,10 @@ public class PlayerMovement : MonoBehaviour
     private float? jumpButtonPressedTime;
     private bool isJumping;
     private bool isGrounded;
+    private bool wasGroundedLastFrame;
     private bool isCasting;
 
     [Header("Everything else")]
-    [SerializeField] private Collider wasser;
     private Animator animator;
 
     [Header("Audio")]
@@ -40,7 +40,8 @@ public class PlayerMovement : MonoBehaviour
     private bool footstepplay = false;
     private float lastfootsteptime = 0f;
     [SerializeField] private AK.Wwise.Event jump;
-
+    [SerializeField] private AK.Wwise.Event land;
+    [SerializeField] AK.Wwise.RTPC myspeed;
 
     void Start()
     {
@@ -48,10 +49,12 @@ public class PlayerMovement : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
         lastfootsteptime = Time.time;
+        myspeed.SetGlobalValue(0);
     }
 
     void Update()
     {
+        wasGroundedLastFrame = isGrounded;
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 horizontalVelocity = characterController.velocity;
@@ -73,10 +76,11 @@ public class PlayerMovement : MonoBehaviour
             lastfootsteptime = Time.time;
             footstepplay = true;
         }
-        else if (horizontalSpeed > 1 && Time.time - lastfootsteptime > 150 / horizontalSpeed * Time.deltaTime)
+        else if (horizontalSpeed > 1 && Time.time - lastfootsteptime > 290 / horizontalSpeed * Time.deltaTime)
         {
             footstepplay = false;
         }
+        myspeed.SetGlobalValue(horizontalSpeed);
 
 
         if (Input.GetKeyDown("joystick button 8"))
@@ -110,10 +114,16 @@ public class PlayerMovement : MonoBehaviour
             lastGroundedTime = Time.time;
         }
 
-        if (Input.GetButtonDown("Jump") || Input.GetKeyDown("joystick button 0"))
+        if (Input.GetButtonDown("Jump") && isGrounded || Input.GetKeyDown("joystick button 0") && isGrounded)
         {
             jumpButtonPressedTime = Time.time;
             jump.Post(gameObject);
+        }
+
+
+        if (!wasGroundedLastFrame && isGrounded)
+        {
+            land.Post(gameObject);
         }
 
 
@@ -180,11 +190,6 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("IsCasting", false);
         }
 
-        // test scene load
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            SceneManager.LoadScene("LEVEL_2");
-        }
     }
 
     private void OnApplicationFocus(bool focus)

@@ -12,10 +12,10 @@ public class DoorsOpening : MonoBehaviour
     private bool isOpening;
 
     [Header("Audio")]
-    [SerializeField] private AK.Wwise.Switch Open;
-    [SerializeField] private AK.Wwise.Switch Close;
-    [SerializeField] private AK.Wwise.Switch Default;
-
+    [SerializeField] private AK.Wwise.Event doorOpen;
+    [SerializeField] private AK.Wwise.Event doorClose;
+    private int doormode = 0;
+    private int change = 0;
 
     void Start()
     {
@@ -36,12 +36,12 @@ public class DoorsOpening : MonoBehaviour
             isOpening = true;
             if (transform.position.z < openposition)
             {
-                Open.SetValue(gameObject);
+                doormode = 1;
                 transform.Translate(direction * speed * Time.deltaTime);
                 if (transform.position.z > openposition)
                 {
-                    Default.SetValue(gameObject);
                     transform.position = new Vector3(transform.position.x, transform.position.y, openposition);
+                    doormode = 0;
                 }
             }
         }
@@ -50,14 +50,32 @@ public class DoorsOpening : MonoBehaviour
             isOpening = false;
             if (transform.position.z > closedposition)
             {
-                Close.SetValue(gameObject);
+                doormode = 2;
                 transform.Translate(direction * speed * 2f * Time.deltaTime);
                 if (transform.position.z < closedposition)
                 {
-                    Default.SetValue(gameObject);
                     transform.position = new Vector3(transform.position.x, transform.position.y, closedposition);
+                    doormode = 0;
                 }
             }
+        }
+        if (doormode == 0 && change > 0)
+        {
+            doorOpen.Stop(gameObject);
+            doorClose.Stop(gameObject);
+            change = 0;
+        }
+        if (doormode == 1 && change <= 1)
+        {
+            doorClose.Stop(gameObject);
+            doorOpen.Post(gameObject);
+            change = 2;
+        }
+        if (doormode == 2 && change == 2 || doormode == 2 && change == 0)
+        {
+            doorOpen.Stop(gameObject);
+            doorClose.Post(gameObject);
+            change = 1;
         }
     }
 }

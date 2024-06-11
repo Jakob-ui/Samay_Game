@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class WaterLever : MonoBehaviour
 {
+    [Header("Lever Variables")]
     public static bool waterState;
     private bool leverState;
     private List<GameObject> waterfountains;
@@ -13,6 +14,9 @@ public class WaterLever : MonoBehaviour
     [SerializeField] private TextMeshProUGUI leverText;
     [SerializeField] private Animator animator;
 
+    [Header("Audio")]
+    [SerializeField] AK.Wwise.Event leveroff;
+    [SerializeField] AK.Wwise.Event leveron;
 
 
     void Start()
@@ -32,12 +36,14 @@ public class WaterLever : MonoBehaviour
             flag = !flag;
             ActivateAll();
             animator.SetBool("LeverState", true);
+            leveroff.Post(gameObject);
         }
         else if (Input.GetKeyDown(KeyCode.F) && flag && leverState || Input.GetKeyDown("joystick button 2") && flag && leverState)
         {
             flag = !flag;
             DeactivateAll();
             animator.SetBool("LeverState", false);
+            leveron.Post(gameObject);
         }
     }
 

@@ -7,23 +7,27 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_PressurePlatedown" ID="{644ABFAF-8E45-4049-AB3E-0E445C374C94}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RockRumble" ID="{88C0E55A-B45B-407C-9740-BB5D12B1CE8D}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Lever" ID="{A8C79027-A514-4082-A91C-A3C8F47207FE}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HittingGround" ID="{16D46C1A-110F-40CF-B1D0-3AB9B158E21E}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Samay_Cutscene_music" ID="{38F83FB4-33CA-4123-97E8-F0F2941B967C}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Falling" ID="{CD003264-E1A8-4130-8A58-A3F978A2B59A}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_success" ID="{261932B9-4813-4402-999C-F1B1A3A16487}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Spikes" ID="{9B9BAFBA-DA3C-440B-A800-AA5B0C931462}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Buttons" ID="{03C5C9AA-E552-44FE-BF92-A85F938919FF}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PressurePlateup" ID="{A8F7E12B-AFEF-45C5-B139-148060CACBF2}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Stone_Door_Close" ID="{1DFA12BE-8435-4624-841E-551BB198C6D2}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Hourglass" ID="{86F03E02-C6C1-4668-B973-3100D1467510}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Jungle_Ambience" ID="{5DAE7750-80B0-47C0-81EA-36329524C2EA}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Torchfire" ID="{FA45E941-9CBF-4899-BDBD-DC03AA4B220B}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Stone_Door_Open" ID="{5A5EA654-CCC5-4938-A73C-D855F3EC182D}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Waterflow" ID="{8EB0290E-4783-4982-A95E-AD2D929E06AE}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_FireCrackling" ID="{AA4A9C62-6809-4992-AD13-377E8FE73566}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_FireCrackling" ID="{401E8AF1-6594-4A08-8BB0-DF1257C6E953}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Timestop" ID="{66CE324E-6543-4A30-992A-3B796E02ED77}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Waterflow" ID="{DB2CD678-D98F-4A39-8786-52EE4E161715}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Lever_False" ID="{E905BD9F-DDE8-4A71-82E5-02C0CA9F3B6D}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_CaveDrips" ID="{12EE5B3B-713E-4AA5-A30F-540C6AC2F4FD}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Stone_Door" ID="{AD64DD78-AF02-4B62-A8F1-ECD26B567C00}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Torchfire" ID="{C7377DCE-4E1A-4B9B-9A9A-27112A24B6C0}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Lever_True" ID="{4E36B6C0-AB21-4BB5-BA15-540D3245D655}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="TimeBar" ID="{E5EA1F2C-8011-4BBD-93C0-79AEEDBE5582}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pendulum" ID="{461F981A-B3FC-4C82-A879-2069383FCF80}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_CaveDrips" ID="{A76B688A-B62C-4EB5-BD7A-7C832EBBF33B}" WorkUnitID="{1127E009-3BAC-4569-B5F9-A0C63B58A8A6}" Origin="Manual" Filter="7"/>

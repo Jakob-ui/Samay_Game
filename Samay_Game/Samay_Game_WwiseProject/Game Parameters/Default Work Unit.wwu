@@ -6,12 +6,12 @@
 				<GameParameter Name="Speed" ID="{068059CC-A781-438D-9BDC-C7317C0546DE}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="8"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="TimeBar" ID="{9CE15D4A-2080-4273-AF63-260A81F55B6D}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="40"/>
-						<Property Name="Max" Type="Real64" Value="40"/>
+						<Property Name="Max" Type="Real64" Value="50"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

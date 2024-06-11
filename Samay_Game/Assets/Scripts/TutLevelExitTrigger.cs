@@ -22,7 +22,7 @@ public class TutLevelExitTrigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("sceneswitch");
+        AkSoundEngine.StopAll();
         if (other.gameObject.CompareTag("Player") && SceneSwitch)
         {
             StartCoroutine(ChangeScene());

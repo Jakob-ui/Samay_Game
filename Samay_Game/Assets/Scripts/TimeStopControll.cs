@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AK.Wwise;
 
 public class TimeStopControll : MonoBehaviour
 {
@@ -15,12 +16,16 @@ public class TimeStopControll : MonoBehaviour
 
 
     [Header("Time Bar")]
-    private float maxValue = 40f;
+    private float maxValue = 50f;
     private float currentValue;
     public TimeBar timeBar;
+    private bool reduce;
 
     [Header("Audio")]
     [SerializeField] AK.Wwise.Event timestop;
+    [SerializeField] AK.Wwise.Event timeBareffect;
+    [SerializeField] AK.Wwise.RTPC timeBarPitch;
+
 
 
     void Start()
@@ -53,6 +58,8 @@ public class TimeStopControll : MonoBehaviour
             }
             freezingParticles.AddRange(ps);
         }
+        timeBarPitch.SetGlobalValue(50);
+        timeBareffect.Stop(gameObject);
     }
 
     void Update()
@@ -62,15 +69,24 @@ public class TimeStopControll : MonoBehaviour
         {
             activated = !activated;
             flag = true;
+
         }
         Timestop();
         ControllTimeBar();
+
+
 
         if (activated && flag)
         {
             timestop.Post(gameObject);
             flag = false;
         }
+        if (currentValue == 50 && !activated)
+        {
+            timeBareffect.Stop(gameObject);
+        }
+
+        timeBarPitch.SetGlobalValue(currentValue);
     }
 
     void Timestop()
@@ -102,12 +118,24 @@ public class TimeStopControll : MonoBehaviour
 
     void ReduceTimeBar(float damage)
     {
+        if (currentValue < 50 && reduce)
+        {
+            timeBareffect.Stop(gameObject);
+            timeBareffect.Post(gameObject);
+            reduce = false;
+        }
         currentValue -= damage;
         timeBar.SetStrengh(currentValue);
     }
 
     void RecoverTimeBar(float recover)
     {
+        if (currentValue >= 0 && !reduce)
+        {
+            timeBareffect.Stop(gameObject);
+            timeBareffect.Post(gameObject);
+            reduce = true;
+        }
         currentValue += recover;
         currentValue = Mathf.Clamp(currentValue, 0f, maxValue);
         timeBar.SetStrengh(currentValue);
