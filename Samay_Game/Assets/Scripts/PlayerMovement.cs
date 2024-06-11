@@ -26,14 +26,19 @@ public class PlayerMovement : MonoBehaviour
     private float originalStepOffset;
     private float? lastGroundedTime;
     private float? jumpButtonPressedTime;
+    private bool isJumping;
+    private bool isGrounded;
+    private bool isCasting;
 
     [Header("Everything else")]
     [SerializeField] private Collider wasser;
 
+    private Animator animator;
+
 
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         originalStepOffset = characterController.stepOffset;
     }
@@ -64,6 +69,11 @@ public class PlayerMovement : MonoBehaviour
             toggleControllerSprint = false;
         }
 
+        // walk blend 
+        //if (Input.GetKey(KeyCode.RightShift))
+        //{
+          //  inputMagnitude /= 2;
+        //}
         //animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
         float speed = inputMagnitude * maximumSpeed;
@@ -87,10 +97,17 @@ public class PlayerMovement : MonoBehaviour
         {
             characterController.stepOffset = originalStepOffset;
             ySpeed = -0.5f;
+            animator.SetBool("IsGrounded", true);
+            isGrounded = true;
+            animator.SetBool("IsJumping", false);
+            isJumping = false;
+            animator.SetBool("IsFalling", false);
 
             if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
             {
                 ySpeed = jumpSpeed;
+                animator.SetBool("IsJumping", true);
+                isJumping = true;
                 ySpeed -= 2f * Time.deltaTime;
                 jumpButtonPressedTime = null;
                 lastGroundedTime = null;
@@ -99,6 +116,13 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             characterController.stepOffset = 0;
+            animator.SetBool("IsGrounded", false);
+            isGrounded = false;
+
+            if ((isJumping && ySpeed <0) || ySpeed < 0)
+            {
+                   animator.SetBool("IsFalling", true);
+            }
         }
 
         Vector3 velocity = movementDirection * speed;
@@ -108,9 +132,28 @@ public class PlayerMovement : MonoBehaviour
 
         if (movementDirection != Vector3.zero)
         {
+
+            animator.SetBool("IsMoving", true);
             Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
 
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
+        else
+        {
+            animator.SetBool("IsMoving", false);
+        }
+
+
+        // Casting
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            isCasting = true;
+            animator.SetBool("IsCasting", true);
+        }
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            isCasting = false;
+            animator.SetBool("IsCasting", false);
         }
 
         // test scene load
