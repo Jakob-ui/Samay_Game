@@ -9,6 +9,14 @@ public class PressurePlateTrigger : MonoBehaviour
     private float notpressedposition;
     private float pressedposition;
     public static bool platepressed = false;
+    bool pressedflag = true;
+    bool releasedflag = true;
+
+
+    [Header("Audio")]
+    [SerializeField] AK.Wwise.Event Pressureplatepressed;
+    [SerializeField] AK.Wwise.Event Pressureplatereleased;
+
     void Start()
     {
         pressedposition = transform.position.y + offset;
@@ -20,23 +28,36 @@ public class PressurePlateTrigger : MonoBehaviour
 
         if (platepressed)
         {
-            if (!TimeStopControll.activated)
+            if (TimeStopControll.activated)
             {
                 return;
             }
             if (transform.position.y >= pressedposition)
             {
+
+                if (pressedflag)
+                {
+                    Pressureplatepressed.Post(gameObject);
+                    pressedflag = false;
+                }
+                releasedflag = true;
                 transform.Translate(Vector3.down * speed * Time.deltaTime);
             }
         }
         if (!platepressed)
         {
-            if (!TimeStopControll.activated)
+            if (TimeStopControll.activated)
             {
                 return;
             }
             if (transform.position.y <= notpressedposition)
             {
+                if (releasedflag)
+                {
+                    Pressureplatereleased.Post(gameObject);
+                    releasedflag = false;
+                }
+                pressedflag = true;
                 transform.Translate(Vector3.up * speed * Time.deltaTime);
             }
         }

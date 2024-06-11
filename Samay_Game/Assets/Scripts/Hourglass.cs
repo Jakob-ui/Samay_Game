@@ -6,15 +6,21 @@ using UnityEngine;
 
 public class Hourglass : MonoBehaviour
 {
+
     private float rotationAngle = -90f;
     private bool canRotate = false;
     private float rotationDuration = 1f;
     private bool isRotating = false;
 
-    //Text
+    [Header("Text")]
     private bool hourglassState;
-    private bool flag = false;
     [SerializeField] private TextMeshProUGUI leverText;
+
+
+
+    [Header("Audio")]
+    [SerializeField] AK.Wwise.Event hourglass;
+    private bool flag = true;
 
     void Start()
     {
@@ -23,9 +29,10 @@ public class Hourglass : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.F) && canRotate && !isRotating || Input.GetKeyDown("joystick button 2") && canRotate && !isRotating)
+        if (Input.GetKeyDown(KeyCode.F) && canRotate && !isRotating || Input.GetKeyDown("joystick button 2") && canRotate && !isRotating)
         {
             StartCoroutine(RotateSmoothly(Vector3.right, rotationAngle, rotationDuration));
+            hourglass.Post(gameObject);
         }
     }
 

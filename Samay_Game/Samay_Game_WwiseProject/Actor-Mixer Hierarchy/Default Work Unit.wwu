@@ -118,6 +118,7 @@
 										<Value>730</Value>
 									</ValueList>
 								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="72"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-7</Value>
@@ -315,7 +316,7 @@
 											<PropertyList>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.286736579275906"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.205423220973784"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
@@ -340,10 +341,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{AD1E87BA-840B-453D-B2E7-2A480FBA0D90}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0427965043695381"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.363770287141074"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.641947565543072"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.419405742821473"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.603430711610488"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
@@ -368,10 +369,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{67809F9A-767A-4C22-A613-F5A08861B8FE}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0299575530586767"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.29245443196005"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.55351310861423"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.33953058676654"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.52783520599251"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
@@ -396,10 +397,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="ES_Footsteps Rocks 6 - SFX Producer" ID="{52457ADD-7AF7-49F2-9B8B-583E2A978484}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.0727540574282147"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0556354556803994"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.70330087390762"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.05851186017478"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.80173283395756"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.03283395755306"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ES_Footsteps Rocks 6 - SFX Producer.wav</AudioFile>
@@ -963,6 +964,382 @@
 										<SwitchRef Name="ON" ID="{694A1CE9-41E7-4B9C-BC38-EF4DFA535770}"/>
 										<ItemList>
 											<ItemRef Name="Lever_True" ID="{5D0AE6CC-89F8-49D8-82F0-329F84334C33}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<BlendContainer Name="Pendulum" ID="{9BB62775-5B8B-4CE9-860E-21B6F859C9CA}" ShortID="472481688">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PendulumAttenuation" ID="{288822BC-2F07-479A-A334-079B5A90FF2F}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PendulumSwing" ID="{465BF03D-79BF-4054-83A1-49F578226CD4}" ShortID="701645198">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>490</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="96"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-30</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PendulumAttenuation" ID="{288822BC-2F07-479A-A334-079B5A90FF2F}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Wind Storm 7 - SFX Producer" ID="{51FD2F82-9922-46CC-B043-0EEF4FA49CAC}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.65195505617977"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.85801747815235"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Wind Storm 7 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="981508221"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Wind Storm 7 - SFX Producer" ID="{51FD2F82-9922-46CC-B043-0EEF4FA49CAC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pendulum Sharp" ID="{56E6ED04-8386-4E91-8D3C-8F5DFFCDDA27}" ShortID="541607031">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Pendulum_Blade_Attenuation" ID="{5C46D902-FBAD-4721-B6F4-839842310497}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Sword Scrape Rapier 9 - SFX Producer" ID="{A1F938F6-B288-4562-9DBB-EB9BC380C42B}">
+											<Language>SFX</Language>
+											<AudioFile>ES_Sword Scrape Rapier 9 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="159096066"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Sword Scrape Rapier 9 - SFX Producer" ID="{A1F938F6-B288-4562-9DBB-EB9BC380C42B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="PressurePlatedown" ID="{806B6D0C-A16B-40A9-AE09-C88F89A0985F}" ShortID="683838477">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-630</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7DB3138C-726F-4441-BF7B-5603FD843C83}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="505"/>
+													<Property Name="Min" Type="Real64" Value="-379"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Stone Drag Object 3 - SFX Producer" ID="{23AF4CA4-0847-4526-B9B2-D652C4D1C26A}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.353662921348315"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.731161048689138"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ES_Stone Drag Object 3 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="434251246"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Stone Drag Object 3 - SFX Producer" ID="{23AF4CA4-0847-4526-B9B2-D652C4D1C26A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PressurePlateup" ID="{C9CC6C2B-9EBE-433A-983A-1E330A36C2E6}" ShortID="202901396">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>530</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7A47B3F6-8FCC-4ECC-B735-18C59E250576}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="505"/>
+													<Property Name="Min" Type="Real64" Value="-379"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Stone Drag Object 3 - SFX Producer" ID="{968078A2-9FB6-4E3A-943D-2CA3E40B7516}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.353662921348315"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.731161048689138"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ES_Stone Drag Object 3 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="434251246"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Stone Drag Object 3 - SFX Producer" ID="{968078A2-9FB6-4E3A-943D-2CA3E40B7516}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Spikes" ID="{511E5DF3-AAFA-45C5-86F0-FDC9C6BB3559}" ShortID="312806604">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>70</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PendulumAttenuation" ID="{288822BC-2F07-479A-A334-079B5A90FF2F}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ES_Sword Scrape Rapier 9 - SFX Producer" ID="{F79B239B-27BB-437A-B82B-E752F7D23588}">
+									<Language>SFX</Language>
+									<AudioFile>ES_Sword Scrape Rapier 9 - SFX Producer.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="159096066"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ES_Sword Scrape Rapier 9 - SFX Producer" ID="{F79B239B-27BB-437A-B82B-E752F7D23588}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<SwitchContainer Name="Stone Door" ID="{C3FBE229-8964-4006-A372-CDABCA5CB1A2}" ShortID="691076176">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Default" ID="{A491BBFA-59B3-423B-A6E2-9E61BF42B73D}" WorkUnitID="{5EB42DD9-1B27-4FB0-8CD7-13D7DAC9B5BA}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Door" ID="{A109BCC9-78BE-427D-BFDC-92286F415007}" WorkUnitID="{5EB42DD9-1B27-4FB0-8CD7-13D7DAC9B5BA}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Stone Door Open" ID="{87B8199D-18C5-4D56-9EDC-F292489B54FB}" ShortID="318933058">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-180</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="WaterAttenuation" ID="{27000485-CA05-4EA8-9ABE-91B8BCD0EC6C}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Stone Door Open 2 - SFX Producer" ID="{A24660F2-AEE0-40A9-9CE3-D4334BAD70BE}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0344569288389513"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.05318352059925"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Stone Door Open 2 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="207516780"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Stone Door Open 2 - SFX Producer" ID="{A24660F2-AEE0-40A9-9CE3-D4334BAD70BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stone Door Close" ID="{1D9E0DA2-390E-4D6B-B243-EE202AF017E1}" ShortID="704892224">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>270</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="WaterAttenuation" ID="{27000485-CA05-4EA8-9ABE-91B8BCD0EC6C}" WorkUnitID="{BBE5DB04-77EE-4B9F-9C20-12B96479FF5D}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9B87CAA4-3658-48C0-ABC6-946A9166C985}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7FC54B19-D103-454C-8FBA-8120564DF4A9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ES_Stone Door Open 2 - SFX Producer" ID="{D131EDB0-67E7-4D99-B731-EA30D1EDF3EB}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0434456928838951"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.01722846441948"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>ES_Stone Door Open 2 - SFX Producer.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1073300278"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ES_Stone Door Open 2 - SFX Producer" ID="{D131EDB0-67E7-4D99-B731-EA30D1EDF3EB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Stone Door Open" ID="{87B8199D-18C5-4D56-9EDC-F292489B54FB}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Stone Door Close" ID="{1D9E0DA2-390E-4D6B-B243-EE202AF017E1}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Close" ID="{0892EA9F-6832-4656-AF95-64A1909E8118}"/>
+										<ItemList>
+											<ItemRef Name="Stone Door Close" ID="{1D9E0DA2-390E-4D6B-B243-EE202AF017E1}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Open" ID="{63D4B8F1-1F5C-4262-88FF-DC30C9A2B1CB}"/>
+										<ItemList>
+											<ItemRef Name="Stone Door Open" ID="{87B8199D-18C5-4D56-9EDC-F292489B54FB}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

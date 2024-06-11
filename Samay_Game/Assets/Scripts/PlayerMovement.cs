@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
             lastfootsteptime = Time.time;
             footstepplay = true;
         }
-        else if (horizontalSpeed > 1 && Time.time - lastfootsteptime > 130 / horizontalSpeed * Time.deltaTime)
+        else if (horizontalSpeed > 1 && Time.time - lastfootsteptime > 150 / horizontalSpeed * Time.deltaTime)
         {
             footstepplay = false;
         }

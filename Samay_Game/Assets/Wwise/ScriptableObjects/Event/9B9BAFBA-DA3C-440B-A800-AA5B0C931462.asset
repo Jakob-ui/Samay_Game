@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6d429e1c5ac674eb741a80a0bcf5d6, type: 3}
+  m_Name: 9B9BAFBA-DA3C-440B-A800-AA5B0C931462
+  m_EditorClassIdentifier: 
+  objectName: Play_Spikes
+  id: 996860547
+  guid: 9B9BAFBA-DA3C-440B-A800-AA5B0C931462

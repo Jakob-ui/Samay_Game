@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6d429e1c5ac674eb741a80a0bcf5d6, type: 3}
+  m_Name: 86F03E02-C6C1-4668-B973-3100D1467510
+  m_EditorClassIdentifier: 
+  objectName: Play_Hourglass
+  id: 1370920248
+  guid: 86F03E02-C6C1-4668-B973-3100D1467510

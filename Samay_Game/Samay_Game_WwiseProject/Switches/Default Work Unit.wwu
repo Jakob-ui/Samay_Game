@@ -9,6 +9,13 @@
 						<Switch Name="OFF" ID="{6C14BB9E-E8B4-4030-91C4-AA29CF4602FD}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Door" ID="{A109BCC9-78BE-427D-BFDC-92286F415007}">
+					<ChildrenList>
+						<Switch Name="Open" ID="{63D4B8F1-1F5C-4262-88FF-DC30C9A2B1CB}"/>
+						<Switch Name="Close" ID="{0892EA9F-6832-4656-AF95-64A1909E8118}"/>
+						<Switch Name="Default" ID="{A491BBFA-59B3-423B-A6E2-9E61BF42B73D}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

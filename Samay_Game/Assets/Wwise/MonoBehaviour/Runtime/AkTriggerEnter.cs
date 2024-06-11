@@ -20,7 +20,7 @@ public class AkTriggerEnter : AkTriggerBase
 	private UnityEngine.GameObject triggerObject = null;
 	void Start()
 	{
-		triggerObject = UnityEngine.GameObject.FindWithTag("Player");
+		triggerObject = UnityEngine.GameObject.FindWithTag("MainCamera");
 	}
 
 	private void OnTriggerEnter(UnityEngine.Collider in_other)

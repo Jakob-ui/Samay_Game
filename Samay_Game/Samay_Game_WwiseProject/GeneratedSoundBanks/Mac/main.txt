@@ -1,18 +1,24 @@
 Event	ID	Name			Wwise Object Path	Notes
 	110520045	Play_Timestop			\Default Work Unit\Player\Play_Timestop	
 	518242827	Play_Waterflow			\Default Work Unit\Environment\Play_Waterflow	
+	532613478	Play_PressurePlateup			\Default Work Unit\Effects\Play_PressurePlateup	
+	912371233	Play_PressurePlatedown			\Default Work Unit\Effects\Play_PressurePlatedown	
 	913957623	Play_Falling			\Default Work Unit\Player\Play_Falling	
+	996860547	Play_Spikes			\Default Work Unit\Effects\Play_Spikes	
 	1168366424	Play_HittingGround			\Default Work Unit\Player\Play_HittingGround	
 	1334786394	Stop_FireCrackling			\Default Work Unit\Environment\Stop_FireCrackling	
 	1370920248	Play_Hourglass			\Default Work Unit\Effects\Play_Hourglass	
+	1503332828	Play_Stone_Door			\Default Work Unit\Effects\Play_Stone_Door	
 	2135762577	Stop_Waterflow			\Default Work Unit\Environment\Stop_Waterflow	
 	2245623692	Play_Jungle_Ambience			\Default Work Unit\UI\Play_Jungle_Ambience	
 	2461875365	Play_Buttons			\Default Work Unit\UI\Play_Buttons	
 	2550218880	Play_FireCrackling			\Default Work Unit\Environment\Play_FireCrackling	
 	2705271378	Stop_Torchfire			\Default Work Unit\Environment\Stop_Torchfire	
+	2958693236	Play_Pendulum			\Default Work Unit\Effects\Play_Pendulum	
 	3120591130	Play_RockRumble			\Default Work Unit\Effects\Play_RockRumble	
 	3196500978	Play_Lever			\Default Work Unit\Effects\Play_Lever	
 	3281489922	Pause_Jungle_Ambience			\Default Work Unit\UI\Pause_Jungle_Ambience	
+	3406143321	Stop_CaveDrips			\Default Work Unit\Environment\Stop_CaveDrips	
 	3689126666	Play_Jump			\Default Work Unit\Player\Play_Jump	
 	3738480268	Play_Torchfire			\Default Work Unit\Environment\Play_Torchfire	
 	3776642413	TimeBar			\Default Work Unit\Effects\TimeBar	
@@ -20,9 +26,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	4118844927	Play_CaveDrips			\Default Work Unit\Environment\Play_CaveDrips	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	1877847629	Door			\Default Work Unit\Door	
 	2794570678	Lever_Switch			\Default Work Unit\Lever_Switch	
 
 Switch	ID	Name	Switch Group			Notes
+	782826392	Default	Door			
+	1451272583	Close	Door			
+	3072142513	Open	Door			
 	930712164	OFF	Lever_Switch			
 	1651971902	ON	Lever_Switch			
 
@@ -30,29 +40,34 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3776642413	TimeBar			\Default Work Unit\TimeBar	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	94354583	ES_Footsteps Rocks 6 - SFX Producer_01	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_8DA967BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer_01		53504
+	94354583	ES_Footsteps Rocks 6 - SFX Producer_01	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_15445552.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer_01		35432
 	152339487	CaveDrips	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Cave Ambience Drips - SFX Producer_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\CaveDrips		23185504
+	159096066	Spikes	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Sword Scrape Rapier 9 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\Spikes		157792
 	180120491	HittingGround	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Hard Sole Shoes 182 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\HittingGround		114784
-	185391235	ES_Footsteps Rocks 6 - SFX Producer_03	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_EDA4D35C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer_03		68300
+	185391235	ES_Footsteps Rocks 6 - SFX Producer_03	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_61136F06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer_03		44468
+	207516780	Stone Door Open	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Stone Door Open 2 - SFX Producer_1DD0C1E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\Stone Door\Stone Door Open		579692
 	273947239	Hourglass	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Stone Drag Object 3 - SFX Producer_E69A069B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\Hourglass		264288
 	290807575	ES_Rock Impact 3 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Rock Impact 3 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\RockRumble\ES_Rock Impact 3 - SFX Producer		309344
 	315832172	ES_Time Travel Energy - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Time Travel Energy - SFX Producer_05FD7FD5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\ES_Time Travel Energy - SFX Producer		1592372
-	327486410	ES_Footsteps Rocks 6 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_343DC2CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer		55148
+	327486410	ES_Footsteps Rocks 6 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_0C1A447F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer		39536
 	340851691	ES_Crash Rock Debris 19 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Crash Rock Debris 19 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\RockRumble\ES_Crash Rock Debris 19 - SFX Producer		567392
 	344014615	ES_Button Push 3 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Button Push 3 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\ES_Button Push 3 - SFX Producer		61536
 	348359839	FireCrackling	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Fire Flame Crackle - SFX Producer_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\FireCrackling		21956704
 	363602015	ES_Button Push 5 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Button Push 5 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Buttons\ES_Button Push 5 - SFX Producer		55392
 	387707731	ES_Rock Impact 6 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Rock Impact 6 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\RockRumble\ES_Rock Impact 6 - SFX Producer		356448
 	392148820	ES_Rock Impact 39 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Rock Impact 39 - SFX Producer_65A8617A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\RockRumble\ES_Rock Impact 39 - SFX Producer		560688
+	434251246	PressurePlatedown	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Stone Drag Object 3 - SFX Producer_BBA99F60.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\PressurePlatedown		140480
 	505168709	Waterflow	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_SFX Waterfall - SFX Producer_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Waterflow		19492960
-	515103889	ES_Footsteps Rocks 6 - SFX Producer_02	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_7671360D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer_02		50220
+	515103889	ES_Footsteps Rocks 6 - SFX Producer_02	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Footsteps Rocks 6 - SFX Producer_7447A075.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\ES_Footsteps Rocks 6 - SFX Producer_02		36252
 	646025256	Jump	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Dirt Impacts 54 - SFX Producer_05415FD2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump		43458
 	658470552	Falling	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Wind Storm 5 - SFX Producer_E3C063DC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Falling		3883248
-	675182018	ES_Ice Crack Freeze - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Ice Crack Freeze - SFX Producer_1796410A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Timestop\ES_Ice Crack Freeze - SFX Producer		153584
+	675182018	ES_Ice Crack Freeze - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Ice Crack Freeze - SFX Producer_4A4887D4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Timestop\ES_Ice Crack Freeze - SFX Producer		153584
 	779713789	ES_Rock Impact 5 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Rock Impact 5 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\RockRumble\ES_Rock Impact 5 - SFX Producer		249952
 	780805693	Torchfire	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Fire Wood Large 2 - SFX Producer_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Torchfire		21608544
 	893283590	Jungle Ambience	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Jungle Ambience 14 - SFX Producer_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Jungle Ambience		6914144
-	994689764	ES_Time Wave Ripple Slow 2 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Time Wave Ripple Slow 2 - SFX Producer_C98B58BB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Timestop\ES_Time Wave Ripple Slow 2 - SFX Producer		130316
+	981508221	PendulumSwing	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Wind Storm 7 - SFX Producer_FCFAEF61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\Pendulum\PendulumSwing		694776
+	994689764	ES_Time Wave Ripple Slow 2 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Time Wave Ripple Slow 2 - SFX Producer_D746E2F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Timestop\ES_Time Wave Ripple Slow 2 - SFX Producer		130316
 	1005148804	ES_Rock Debris Spill 1 - SFX Producer	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Rock Debris Spill 1 - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\RockRumble\ES_Rock Debris Spill 1 - SFX Producer		735328
 	1045025300	Lever_True	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Button Lever Wood - SFX Producer_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\Lever\Lever_True		100448
+	1073300278	Stone Door Close	D:\Studium\4. Semester\Game Developement\Samay_Game\Samay_Game\Samay_Game\Samay_Game_WwiseProject\.cache\Mac\SFX\ES_Stone Door Open 2 - SFX Producer_BAF87D62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Effects\Stone Door\Stone Door Close		571064
 

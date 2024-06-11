@@ -24,10 +24,16 @@ namespace AK
         static const AkUniqueID PLAY_JUMP = 3689126666U;
         static const AkUniqueID PLAY_JUNGLE_AMBIENCE = 2245623692U;
         static const AkUniqueID PLAY_LEVER = 3196500978U;
+        static const AkUniqueID PLAY_PENDULUM = 2958693236U;
+        static const AkUniqueID PLAY_PRESSUREPLATEDOWN = 912371233U;
+        static const AkUniqueID PLAY_PRESSUREPLATEUP = 532613478U;
         static const AkUniqueID PLAY_ROCKRUMBLE = 3120591130U;
+        static const AkUniqueID PLAY_SPIKES = 996860547U;
+        static const AkUniqueID PLAY_STONE_DOOR = 1503332828U;
         static const AkUniqueID PLAY_TIMESTOP = 110520045U;
         static const AkUniqueID PLAY_TORCHFIRE = 3738480268U;
         static const AkUniqueID PLAY_WATERFLOW = 518242827U;
+        static const AkUniqueID STOP_CAVEDRIPS = 3406143321U;
         static const AkUniqueID STOP_FIRECRACKLING = 1334786394U;
         static const AkUniqueID STOP_TORCHFIRE = 2705271378U;
         static const AkUniqueID STOP_WATERFLOW = 2135762577U;
@@ -36,6 +42,18 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace DOOR
+        {
+            static const AkUniqueID GROUP = 1877847629U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CLOSE = 1451272583U;
+                static const AkUniqueID DEFAULT = 782826392U;
+                static const AkUniqueID OPEN = 3072142513U;
+            } // namespace SWITCH
+        } // namespace DOOR
+
         namespace LEVER_SWITCH
         {
             static const AkUniqueID GROUP = 2794570678U;

@@ -91,6 +91,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_CaveDrips" ID="{A76B688A-B62C-4EB5-BD7A-7C832EBBF33B}">
+							<ChildrenList>
+								<Action Name="" ID="{7BDB6792-41AC-4972-83E5-DF16C5F96CA0}" ShortID="4485528">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CaveDrips" ID="{08A915E7-F1C4-4B52-8CA3-3679EEB507DC}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{0B0CB9CB-C5C5-433A-B510-4846EAC986A6}" ShortID="738545347">
@@ -174,6 +188,61 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Lever" ID="{C4FCE34C-359F-42FD-9597-A95E47B3F964}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Pendulum" ID="{461F981A-B3FC-4C82-A879-2069383FCF80}">
+							<ChildrenList>
+								<Action Name="" ID="{D09B08BD-5924-4B1D-8650-0A8AAF5FF958}" ShortID="239361037">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Pendulum" ID="{9BB62775-5B8B-4CE9-860E-21B6F859C9CA}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PressurePlatedown" ID="{644ABFAF-8E45-4049-AB3E-0E445C374C94}">
+							<ChildrenList>
+								<Action Name="" ID="{BC9D9E93-E949-4A9E-BFFE-E48B32E6D4E3}" ShortID="20738196">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PressurePlatedown" ID="{806B6D0C-A16B-40A9-AE09-C88F89A0985F}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PressurePlateup" ID="{A8F7E12B-AFEF-45C5-B139-148060CACBF2}">
+							<ChildrenList>
+								<Action Name="" ID="{456AB649-B925-480F-B9DC-51F44F1A829C}" ShortID="75537047">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PressurePlateup" ID="{C9CC6C2B-9EBE-433A-983A-1E330A36C2E6}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Spikes" ID="{9B9BAFBA-DA3C-440B-A800-AA5B0C931462}">
+							<ChildrenList>
+								<Action Name="" ID="{CCA15395-86EC-4F0E-A7B3-16BFE6E45BC0}" ShortID="665861753">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spikes" ID="{511E5DF3-AAFA-45C5-86F0-FDC9C6BB3559}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Stone_Door" ID="{AD64DD78-AF02-4B62-A8F1-ECD26B567C00}">
+							<ChildrenList>
+								<Action Name="" ID="{219AD8CE-48E9-4D7B-A76F-304F8A1EA5A0}" ShortID="439153721">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stone Door" ID="{C3FBE229-8964-4006-A372-CDABCA5CB1A2}" WorkUnitID="{D74C7BC3-27F2-4DFC-965A-35E3CF8B0F4D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

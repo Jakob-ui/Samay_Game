@@ -20,7 +20,7 @@ public class AkTriggerExit : AkTriggerBase
 	private UnityEngine.GameObject triggerObject = null;
 	void Start()
 	{
-		triggerObject = UnityEngine.GameObject.FindWithTag("Player");
+		triggerObject = UnityEngine.GameObject.FindWithTag("MainCamera");
 	}
 
 	private void OnTriggerExit(UnityEngine.Collider in_other)

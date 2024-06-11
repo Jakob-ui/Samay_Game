@@ -6,12 +6,9 @@ public class Level2Enter : MonoBehaviour
 {
     FadeInOut fade;
     [SerializeField] AK.Wwise.Event rumble;
-    void Awake()
-    {
-        rumble.Post(gameObject);
-    }
     void Start()
     {
+        rumble.Post(gameObject);
         fade = FindObjectOfType<FadeInOut>();
         StartCoroutine(Fade());
     }

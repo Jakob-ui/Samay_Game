@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class DoorsOpening : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] private float speed;
     [SerializeField] private float offset;
     private float openposition;
     private float closedposition;
     private bool isOpening;
+
+    [Header("Audio")]
+    [SerializeField] private AK.Wwise.Switch Open;
+    [SerializeField] private AK.Wwise.Switch Close;
+    [SerializeField] private AK.Wwise.Switch Default;
+
 
     void Start()
     {
@@ -29,9 +36,11 @@ public class DoorsOpening : MonoBehaviour
             isOpening = true;
             if (transform.position.z < openposition)
             {
+                Open.SetValue(gameObject);
                 transform.Translate(direction * speed * Time.deltaTime);
                 if (transform.position.z > openposition)
                 {
+                    Default.SetValue(gameObject);
                     transform.position = new Vector3(transform.position.x, transform.position.y, openposition);
                 }
             }
@@ -41,9 +50,11 @@ public class DoorsOpening : MonoBehaviour
             isOpening = false;
             if (transform.position.z > closedposition)
             {
+                Close.SetValue(gameObject);
                 transform.Translate(direction * speed * 2f * Time.deltaTime);
                 if (transform.position.z < closedposition)
                 {
+                    Default.SetValue(gameObject);
                     transform.position = new Vector3(transform.position.x, transform.position.y, closedposition);
                 }
             }
