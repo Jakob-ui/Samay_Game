@@ -44,8 +44,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RipplesDissolve: 5
-    - _RipplesScale: 5
-    - _RipplesSpeed: 0.5
+    - _RipplesScale: 18.25
+    - _RipplesSpeed: 1
     - _Transparency: 1.17
     m_Colors:
     - _BaseColor: {r: 0.2, g: 0.42111108, b: 0.98039216, a: 0}
