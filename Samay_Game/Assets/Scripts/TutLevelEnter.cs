@@ -11,6 +11,7 @@ public class TutLevelEnter : MonoBehaviour
     {
         fade = FindObjectOfType<FadeInOut>();
         StartCoroutine(Fade());
+        cavedrips.Post(gameObject);
     }
     void Update()
     {
