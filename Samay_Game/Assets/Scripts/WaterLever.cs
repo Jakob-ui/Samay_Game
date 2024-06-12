@@ -36,6 +36,7 @@ public class WaterLever : MonoBehaviour
             flag = !flag;
             ActivateAll();
             animator.SetBool("LeverState", true);
+            waterState = true;
             leveroff.Post(gameObject);
         }
         else if (Input.GetKeyDown(KeyCode.F) && flag && leverState || Input.GetKeyDown("joystick button 2") && flag && leverState)
@@ -43,6 +44,7 @@ public class WaterLever : MonoBehaviour
             flag = !flag;
             DeactivateAll();
             animator.SetBool("LeverState", false);
+            waterState = false;
             leveron.Post(gameObject);
         }
     }

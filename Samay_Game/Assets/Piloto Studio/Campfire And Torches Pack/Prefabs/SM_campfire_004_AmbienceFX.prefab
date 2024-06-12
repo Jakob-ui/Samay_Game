@@ -12,12 +12,9 @@ GameObject:
   - component: {fileID: 3893767880310910219}
   - component: {fileID: 1291836037677521345}
   - component: {fileID: 5329153170209712866}
-  - component: {fileID: 9127365746600458553}
-  - component: {fileID: 8382362571372978346}
-  - component: {fileID: 6703832187047957760}
-  - component: {fileID: 2749948945938864336}
-  - component: {fileID: 1966115756418894534}
-  - component: {fileID: 4949007518369362446}
+  - component: {fileID: 4526881037983764413}
+  - component: {fileID: 3056515118868491462}
+  - component: {fileID: 1980120706125534056}
   m_Layer: 0
   m_Name: SM_campfire_004_AmbienceFX
   m_TagString: Untagged
@@ -118,28 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &9127365746600458553
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787420166001440788}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 16.84
-  m_Center: {x: -0.35992813, y: 0.2215805, z: 1.0997505}
---- !u!114 &8382362571372978346
+--- !u!114 &4526881037983764413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +137,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &6703832187047957760
+--- !u!114 &3056515118868491462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,9 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580ee56666cb4f3459517eae2a517866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7f422d6
+  triggerList: 
   useOtherObject: 0
-  actionOnEventType: 1
+  actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
   data:
@@ -193,44 +169,9 @@ MonoBehaviour:
   MultiPositionType: 1
   multiPositionTypeLabel: 0
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions:
-  - {fileID: 0}
-  multiPositionArray: []
---- !u!114 &2749948945938864336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787420166001440788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580ee56666cb4f3459517eae2a517866, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: 3f2ff36a
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c00b83ad4ae57ab49ad15252c4cc2193, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
---- !u!114 &1966115756418894534
+--- !u!114 &1980120706125534056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,21 +180,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 787420166001440788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5d394152843fcb4ba4b4e50c1fcc4d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a5922dff5a60ec45ae318338bc5cebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4949007518369362446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787420166001440788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a085276c89c84884f898126256d5c3d7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  cavedrips:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9e50164ab444dd44c8d8b868a673f856, type: 2}
 --- !u!1 &2660931689636853941
 GameObject:
   m_ObjectHideFlags: 0
