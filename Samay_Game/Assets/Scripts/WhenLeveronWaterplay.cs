@@ -17,23 +17,30 @@ public class WhenLeveronWaterplay : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(WaterLever.waterState);
-        if (flag)
+        if (TimeStopControll.activated)
         {
             waterflow.Stop(gameObject);
-            flag = false;
-        }
-        if (WaterLever.waterState && flagon)
-        {
-            waterflow.Post(gameObject);
-            flagon = false;
-            flagoff = true;
-        }
-        if (!WaterLever.waterState && flagoff)
-        {
-            waterflow.Stop(gameObject);
-            flagoff = false;
             flagon = true;
+        }
+        if (!TimeStopControll.activated)
+        {
+            if (flag)
+            {
+                waterflow.Stop(gameObject);
+                flag = false;
+            }
+            if (WaterLever.waterState && flagon)
+            {
+                waterflow.Post(gameObject);
+                flagon = false;
+                flagoff = true;
+            }
+            if (!WaterLever.waterState && flagoff)
+            {
+                waterflow.Stop(gameObject);
+                flagoff = false;
+                flagon = true;
+            }
         }
     }
 }

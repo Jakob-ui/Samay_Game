@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-using UnityEngine;
-
 public class DogMover : MonoBehaviour
 {
     [SerializeField] private WaypointPath waypointPath;
@@ -15,7 +13,7 @@ public class DogMover : MonoBehaviour
 
     private float timeToWaypoint;
     private float elapsedTime;
-    private bool canMove = false; 
+    private bool canMove = false;
 
     void Start()
     {
@@ -24,7 +22,7 @@ public class DogMover : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (!canMove) return; 
+        if (!canMove) return;
 
         elapsedTime += Time.deltaTime;
         float elapsePercentage = elapsedTime / timeToWaypoint;
@@ -34,7 +32,7 @@ public class DogMover : MonoBehaviour
         if (elapsePercentage >= 1)
         {
             TargetNextWaypoint();
-            canMove = false; 
+            canMove = false;
         }
     }
 

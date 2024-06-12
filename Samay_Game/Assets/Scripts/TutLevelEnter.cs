@@ -11,14 +11,21 @@ public class TutLevelEnter : MonoBehaviour
     {
         fade = FindObjectOfType<FadeInOut>();
         StartCoroutine(Fade());
-
     }
     void Update()
     {
-        if (flag)
+        if (TimeStopControll.activated)
         {
-            cavedrips.Post(gameObject);
-            flag = false;
+            cavedrips.Stop(gameObject);
+            flag = true;
+        }
+        if (!TimeStopControll.activated)
+        {
+            if (flag)
+            {
+                cavedrips.Post(gameObject);
+                flag = false;
+            }
         }
     }
 

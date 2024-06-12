@@ -40,7 +40,6 @@ public class TimeStopControll : MonoBehaviour
             Rigidbody rb = item.GetComponent<Rigidbody>();
             if (rb == null)
             {
-                Debug.LogWarning("Rigidbody for Freeze effect is missing on " + item.name);
                 continue;
             }
             freezingItemsRBs.Add(rb);
@@ -53,7 +52,6 @@ public class TimeStopControll : MonoBehaviour
             ParticleSystem[] ps = item.GetComponentsInChildren<ParticleSystem>();
             if (ps == null)
             {
-                Debug.LogWarning("ParticleSystems for Freeze effect are missing on " + item.name);
                 continue;
             }
             freezingParticles.AddRange(ps);

@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a5922dff5a60ec45ae318338bc5cebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cavedrips:
+  sound:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9e50164ab444dd44c8d8b868a673f856, type: 2}

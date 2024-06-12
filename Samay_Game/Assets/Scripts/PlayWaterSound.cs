@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class PlayWaterSound : MonoBehaviour
 {
-    [SerializeField] AK.Wwise.Event cavedrips;
+    [SerializeField] AK.Wwise.Event sound;
     private bool flag = true;
-    void Start()
-    {
-
-    }
-
-
+    private bool startflag = true;
     void Update()
     {
-        if (flag)
+        if (startflag)
         {
-            cavedrips.Post(gameObject);
-            flag = false;
+            sound.Post(gameObject);
+            startflag = false;
+        }
+        if (TimeStopControll.activated)
+        {
+            sound.Stop(gameObject);
+            flag = true;
+        }
+        if (!TimeStopControll.activated)
+        {
+            if (flag)
+            {
+                sound.Post(gameObject);
+                flag = false;
+            }
         }
     }
 }

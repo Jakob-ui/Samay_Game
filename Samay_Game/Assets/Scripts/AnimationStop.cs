@@ -9,10 +9,6 @@ public class AnimationStop : MonoBehaviour
     [SerializeField] private Material groundWater;
     [SerializeField] private Material Waterfountain;
     [SerializeField] private VFXEventAttribute fire;
-    void Start()
-    {
-
-    }
 
     void Update()
     {

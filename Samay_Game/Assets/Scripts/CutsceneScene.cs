@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CutsceneScene : MonoBehaviour
 {
+    [Header("Times")]
     public float changeTime;
     public SceneSwitch scene;
     public FadeInOut fade;

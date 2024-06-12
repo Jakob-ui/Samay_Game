@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class FloatingText : MonoBehaviour
 {
+    [Header("Objects")]
     Transform mainCam;
     Transform obj;
     Transform worldSpaceCanvas;
     [SerializeField] private Canvas canvas;
+
+    [Header("Offset")]
     public Vector3 offset;
 
     void Start()

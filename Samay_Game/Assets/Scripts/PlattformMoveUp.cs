@@ -19,7 +19,6 @@ public class PlattformMoveUp : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"isOpening: {isOpening}, position.y: {transform.position.y}");
         if (TimeStopControll.activated)
         {
             return;

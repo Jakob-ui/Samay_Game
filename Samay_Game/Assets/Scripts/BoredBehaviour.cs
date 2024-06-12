@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class BoredBehaviour : StateMachineBehaviour
 {
+    [Header("Timing")]
     [SerializeField]
     private float _timeUntilBored;
 
     [SerializeField]
     private int _numberOfBoredAnimations;
 
+    [Header("Animation")]
     private bool _isBored;
     private float _idleTime;
     private int _boredAnimation;
 
-    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
+
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         ResetIdle();
     }
 
-    // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (_isBored == false)
@@ -31,7 +32,7 @@ public class BoredBehaviour : StateMachineBehaviour
             {
                 _isBored = true;
                 _boredAnimation = Random.Range(1, _numberOfBoredAnimations + 1);
-                _boredAnimation = _boredAnimation *2 -1;
+                _boredAnimation = _boredAnimation * 2 - 1;
 
                 animator.SetFloat("BoredAnimation", _boredAnimation - 1);
             }
@@ -45,7 +46,7 @@ public class BoredBehaviour : StateMachineBehaviour
 
     }
 
-    private void ResetIdle ()
+    private void ResetIdle()
     {
         if (_isBored)
         {
@@ -53,6 +54,6 @@ public class BoredBehaviour : StateMachineBehaviour
         }
         _isBored = false;
         _idleTime = 0;
-        
+
     }
 }

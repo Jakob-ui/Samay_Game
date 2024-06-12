@@ -30,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;
     private bool isGrounded;
     private bool wasGroundedLastFrame;
-    private bool isCasting;
 
     [Header("Everything else")]
     private Animator animator;
@@ -181,12 +180,12 @@ public class PlayerMovement : MonoBehaviour
         // Casting
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            isCasting = true;
+
             animator.SetBool("IsCasting", true);
         }
         if (Input.GetKeyUp(KeyCode.Q))
         {
-            isCasting = false;
+
             animator.SetBool("IsCasting", false);
         }
 

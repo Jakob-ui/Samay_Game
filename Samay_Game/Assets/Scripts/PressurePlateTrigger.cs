@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PressurePlateTrigger : MonoBehaviour
 {
+    [Header("Values")]
     [SerializeField] private float speed;
     [SerializeField] private float offset;
     private float notpressedposition;

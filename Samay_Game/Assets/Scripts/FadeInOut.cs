@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class FadeInOut : MonoBehaviour
 {
+    [Header("Canvas")]
     [SerializeField] private CanvasGroup canvasGroup;
     private bool fadein = false;
     private bool fadeout = false;
+
+    [Header("Time")]
     [SerializeField] private float TimeToFade;
     void Update()
     {

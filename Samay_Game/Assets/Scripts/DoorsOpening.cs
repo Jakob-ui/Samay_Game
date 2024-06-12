@@ -59,23 +59,32 @@ public class DoorsOpening : MonoBehaviour
                 }
             }
         }
-        if (doormode == 0 && change > 0)
+
+        if (TimeStopControll.activated)
         {
             doorOpen.Stop(gameObject);
             doorClose.Stop(gameObject);
-            change = 0;
         }
-        if (doormode == 1 && change <= 1)
+        if (!TimeStopControll.activated)
         {
-            doorClose.Stop(gameObject);
-            doorOpen.Post(gameObject);
-            change = 2;
-        }
-        if (doormode == 2 && change == 2 || doormode == 2 && change == 0)
-        {
-            doorOpen.Stop(gameObject);
-            doorClose.Post(gameObject);
-            change = 1;
+            if (doormode == 0 && change > 0)
+            {
+                doorOpen.Stop(gameObject);
+                doorClose.Stop(gameObject);
+                change = 0;
+            }
+            if (doormode == 1 && change <= 1)
+            {
+                doorClose.Stop(gameObject);
+                doorOpen.Post(gameObject);
+                change = 2;
+            }
+            if (doormode == 2 && change == 2 || doormode == 2 && change == 0)
+            {
+                doorOpen.Stop(gameObject);
+                doorClose.Post(gameObject);
+                change = 1;
+            }
         }
     }
 }

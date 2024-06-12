@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class RingController : MonoBehaviour
 {
+    [Header("Materials")]
     [SerializeField] private Material baseMaterial;
     [SerializeField] private Material highlightMaterial;
     [SerializeField] private MeshRenderer ring;
+    [Header("Timebar")]
     [SerializeField] private TimeBar timeBar;
 
     private Color emissionStartColor;

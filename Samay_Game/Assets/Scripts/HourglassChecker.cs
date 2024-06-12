@@ -21,7 +21,6 @@ public class HourglassChecker : MonoBehaviour
 
         if (hourglass0.transform.localRotation.eulerAngles.x == finalXRotation && hourglass1.transform.localRotation.eulerAngles.x == finalXRotation)
         {
-            Debug.Log("Hourglasses correctly rotated!");
             riddlesolved = true;
             if (flag)
             {

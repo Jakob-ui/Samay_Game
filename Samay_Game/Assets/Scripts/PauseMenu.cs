@@ -45,7 +45,6 @@ public class PauseMenu : MonoBehaviour
     {
         AkSoundEngine.WakeupFromSuspend();
         click.Post(gameObject);
-        Debug.Log("Resuming game...");
         pauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.Locked;
@@ -56,7 +55,6 @@ public class PauseMenu : MonoBehaviour
     void PauseGame()
     {
         AkSoundEngine.Suspend();
-        Debug.Log("Pausing game...");
         pauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
@@ -67,7 +65,6 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         click.Post(gameObject);
-        Debug.Log("Quitting game...");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -78,7 +75,6 @@ public class PauseMenu : MonoBehaviour
     {
         AkSoundEngine.WakeupFromSuspend();
         click.Post(gameObject);
-        Debug.Log("Resuming game...");
         pauseMenuPanel.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;

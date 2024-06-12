@@ -13,14 +13,12 @@ public class Hourglass : MonoBehaviour
     private bool isRotating = false;
 
     [Header("Text")]
-    private bool hourglassState;
     [SerializeField] private TextMeshProUGUI leverText;
 
 
 
     [Header("Audio")]
     [SerializeField] AK.Wwise.Event hourglass;
-    private bool flag = true;
 
     void Start()
     {
@@ -41,7 +39,6 @@ public class Hourglass : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             canRotate = true;
-            hourglassState = true;
             leverText.enabled = true;
         }
     }
@@ -51,7 +48,6 @@ public class Hourglass : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             canRotate = false;
-            hourglassState = false;
             leverText.enabled = false;
         }
     }
@@ -73,6 +69,5 @@ public class Hourglass : MonoBehaviour
 
         transform.localRotation = endRotation;
         isRotating = false;
-        Debug.Log("Hourglass rotated EULER! " + gameObject.name + " " + transform.localRotation.eulerAngles.ToString());
     }
 }

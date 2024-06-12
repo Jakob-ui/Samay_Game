@@ -59,7 +59,6 @@ public class StartscreenScript : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         isPaused = false;
-        Debug.Log("Starting Game...");
         fade.FadeIn();
         gamestart = true;
     }
@@ -73,7 +72,6 @@ public class StartscreenScript : MonoBehaviour
     public void QuitGame()
     {
         click.Post(gameObject);
-        Debug.Log("Quitting game...");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

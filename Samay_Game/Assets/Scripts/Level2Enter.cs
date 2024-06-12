@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Level2Enter : MonoBehaviour
 {
+    [Header("Fade Object")]
     FadeInOut fade;
+    [Header("Audio")]
     [SerializeField] AK.Wwise.Event rumble;
     void Start()
     {

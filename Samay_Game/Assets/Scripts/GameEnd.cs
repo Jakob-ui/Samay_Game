@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameEnd : MonoBehaviour
 {
+    [Header("Objects")]
     private FadeInOut fade;
     public SceneSwitch scene;
     public bool SceneSwitch;
@@ -21,7 +22,6 @@ public class GameEnd : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("sceneswitch");
         if (other.gameObject.CompareTag("Player") && SceneSwitch)
         {
             StartCoroutine(ChangeScene());

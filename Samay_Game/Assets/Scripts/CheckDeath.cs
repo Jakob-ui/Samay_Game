@@ -5,11 +5,13 @@ using UnityEngine.UIElements;
 
 public class CheckDeath : MonoBehaviour
 {
+    [Header("Char")]
     [SerializeField] private CharacterController player;
     [SerializeField] private GameObject DeathPlane;
     private Vector3 playerStartPosition;
     private float deathcoords;
 
+    [Header("bools")]
     private bool isDead = false;
     private bool positionupdated = false;
 
