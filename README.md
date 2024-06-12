@@ -1,4 +1,6 @@
-<h1 style="color: orange;">Samay_Game</h1>
+<h1 align="center">
+  <img src="Samay_Game/Assets/Sprites/logo.png" width="350" title="Logo" alt="accessibility text">
+</h1>
 
 ### Story:
 
