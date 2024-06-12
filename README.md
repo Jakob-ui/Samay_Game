@@ -1,4 +1,6 @@
-![Logo](Samay_Game/Assets/Sprites/logo.png)
+<h1 align="center">
+  <img src="Samay_Game/Assets/Sprites/logo.png" width="350" title="Logo" alt="accessibility text">
+</h1>
 
 ### Story:
 
