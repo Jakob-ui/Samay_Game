@@ -28,7 +28,7 @@ public class RingController : MonoBehaviour
                 isHighlighted = true;
                 ring.sharedMaterial = highlightMaterial;
             }
-            highlightMaterial.SetColor("_EmissionColor", emissionStartColor * (timeBar.GetStrength() / 50f));
+            highlightMaterial.SetColor("_EmissionColor", emissionStartColor * (timeBar.GetStrength() / 20f));
         }
         else
         {
