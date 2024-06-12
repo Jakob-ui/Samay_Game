@@ -1,4 +1,4 @@
-<h1 style="color: orange;">Samay_Game</h1>
+![Logo](Samay_Game/Assets/Sprites/logo.png)
 
 ### Story:
 
