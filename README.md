@@ -35,4 +35,4 @@ Deutsch: Zeit ist also auf Hindi Samaya, समय, samaya.
 
 **Viel Spaß beim Spielen!**
 
-Creator: <a href="https://github.com/Jakob-ui">Jakob-ui</a>, <a href="https://github.com/Tepes15">Tepes15</a>, <a href="https://github.com/mt221069">mt221069</a>
+Creator: <a href="https://github.com/Jakob-ui">Jakob-ui</a>, <a href="https://github.com/Tepes15">Tepes15</a>, <a href="https://github.com/mt221069">mt221069</a> <a href="https://github.com/LeniProduction">LeniProduction</a>
