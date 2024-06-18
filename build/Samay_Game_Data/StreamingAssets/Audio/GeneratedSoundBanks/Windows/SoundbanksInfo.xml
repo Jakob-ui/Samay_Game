@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{47560E40-BC0E-5AC2-C1C3-B1F4BF9DE56C}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="2705837510" Name="CaveAudioBus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="640949982" Name="Speed"/>
+				<GameParameter Id="3776642413" Name="TimeBar"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{BC54CBAC-23C6-C3A2-1BD8-BCE70F26795A}">
+			<ShortName>main</ShortName>
+			<Path>main.bnk</Path>
+			<Media>
+				<File Id="51487557" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Samay_Cutscene_music.wav</ShortName>
+					<CachePath>SFX/Samay_Cutscene_music_818F3B66.wem</CachePath>
+				</File>
+				<File Id="94354583" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_357A8783.wem</CachePath>
+				</File>
+				<File Id="152339487" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Cave Ambience Drips - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Cave Ambience Drips - SFX Producer_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="159096066" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Sword Scrape Rapier 9 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Sword Scrape Rapier 9 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="180120491" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Hard Sole Shoes 182 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Hard Sole Shoes 182 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="185391235" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_2E154988.wem</CachePath>
+				</File>
+				<File Id="207516780" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Stone Door Open 2 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Stone Door Open 2 - SFX Producer_30148950.wem</CachePath>
+				</File>
+				<File Id="273947239" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Stone Drag Object 3 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Stone Drag Object 3 - SFX Producer_E69A069B.wem</CachePath>
+				</File>
+				<File Id="290807575" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Rock Impact 3 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Rock Impact 3 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="315832172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Time Travel Energy - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Time Travel Energy - SFX Producer_05FD7FD5.wem</CachePath>
+				</File>
+				<File Id="327486410" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_899FB81E.wem</CachePath>
+				</File>
+				<File Id="340851691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Crash Rock Debris 19 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Crash Rock Debris 19 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="344014615" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Button Push 3 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Button Push 3 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="348359839" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Fire Flame Crackle - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Fire Flame Crackle - SFX Producer_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="363602015" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Button Push 5 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Button Push 5 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="387707731" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Rock Impact 6 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Rock Impact 6 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="392148820" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Rock Impact 39 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Rock Impact 39 - SFX Producer_65A8617A.wem</CachePath>
+				</File>
+				<File Id="434251246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Stone Drag Object 3 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Stone Drag Object 3 - SFX Producer_8E77BE04.wem</CachePath>
+				</File>
+				<File Id="500319183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>success.wav</ShortName>
+					<CachePath>SFX/success_818F3B66.wem</CachePath>
+				</File>
+				<File Id="505168709" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_SFX Waterfall - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_SFX Waterfall - SFX Producer_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="515103889" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Footsteps Rocks 6 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Footsteps Rocks 6 - SFX Producer_F8DB71D4.wem</CachePath>
+				</File>
+				<File Id="646025256" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Dirt Impacts 54 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Dirt Impacts 54 - SFX Producer_05415FD2.wem</CachePath>
+				</File>
+				<File Id="658470552" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Wind Storm 5 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Wind Storm 5 - SFX Producer_E3C063DC.wem</CachePath>
+				</File>
+				<File Id="675182018" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Ice Crack Freeze - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Ice Crack Freeze - SFX Producer_4A4887D4.wem</CachePath>
+				</File>
+				<File Id="779713789" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Rock Impact 5 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Rock Impact 5 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="780805693" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Fire Wood Large 2 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Fire Wood Large 2 - SFX Producer_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="893283590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Jungle Ambience 14 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Jungle Ambience 14 - SFX Producer_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="981508221" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Wind Storm 7 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Wind Storm 7 - SFX Producer_8CBC26F9.wem</CachePath>
+				</File>
+				<File Id="994689764" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Time Wave Ripple Slow 2 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Time Wave Ripple Slow 2 - SFX Producer_D746E2F8.wem</CachePath>
+				</File>
+				<File Id="1005148804" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Rock Debris Spill 1 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Rock Debris Spill 1 - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1045025300" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Button Lever Wood - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Button Lever Wood - SFX Producer_818F3B66.wem</CachePath>
+				</File>
+				<File Id="1073300278" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ES_Stone Door Open 2 - SFX Producer.wav</ShortName>
+					<CachePath>SFX/ES_Stone Door Open 2 - SFX Producer_626AE0DF.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3281489922" Name="Pause_Jungle_Ambience" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2461875365" Name="Play_Buttons" DurationType="OneShot" DurationMin="0.288" DurationMax="0.32">
+					<MediaRefs>
+						<MediaRef Id="344014615"/>
+						<MediaRef Id="363602015"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4118844927" Name="Play_CaveDrips" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="152339487"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="913957623" Name="Play_Falling" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="658470552"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2550218880" Name="Play_FireCrackling" MaxAttenuation="15" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="348359839"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.117072456" DurationMax="0.2835345">
+					<MediaRefs>
+						<MediaRef Id="94354583"/>
+						<MediaRef Id="185391235"/>
+						<MediaRef Id="327486410"/>
+						<MediaRef Id="515103889"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1168366424" Name="Play_HittingGround" DurationType="OneShot" DurationMin="0.5973333" DurationMax="0.5973333">
+					<MediaRefs>
+						<MediaRef Id="180120491"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1370920248" Name="Play_Hourglass" DurationType="OneShot" DurationMin="1.0278625" DurationMax="1.7127492">
+					<MediaRefs>
+						<MediaRef Id="273947239"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3689126666" Name="Play_Jump" DurationType="OneShot" DurationMin="0.4516854" DurationMax="0.4516854">
+					<MediaRefs>
+						<MediaRef Id="646025256"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2245623692" Name="Play_Jungle_Ambience" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="893283590"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1858556990" Name="Play_Lever_False" DurationType="OneShot" DurationMin="0.5900721" DurationMax="0.5900721">
+					<MediaRefs>
+						<MediaRef Id="1045025300"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4279771213" Name="Play_Lever_True" DurationType="OneShot" DurationMin="0.5226667" DurationMax="0.5226667">
+					<MediaRefs>
+						<MediaRef Id="1045025300"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2958693236" Name="Play_Pendulum" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.10876" DurationMax="1.10876">
+					<MediaRefs>
+						<MediaRef Id="159096066"/>
+						<MediaRef Id="981508221"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="912371233" Name="Play_PressurePlatedown" DurationType="OneShot" DurationMin="1.0520922" DurationMax="1.0520922">
+					<MediaRefs>
+						<MediaRef Id="434251246"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="532613478" Name="Play_PressurePlateup" DurationType="OneShot" DurationMin="0.5383419" DurationMax="0.5383419">
+					<MediaRefs>
+						<MediaRef Id="434251246"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3120591130" Name="Play_RockRumble" DurationType="OneShot" DurationMin="4.741773" DurationMax="4.741773">
+					<MediaRefs>
+						<MediaRef Id="290807575"/>
+						<MediaRef Id="340851691"/>
+						<MediaRef Id="387707731"/>
+						<MediaRef Id="392148820"/>
+						<MediaRef Id="779713789"/>
+						<MediaRef Id="1005148804"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2377306268" Name="Play_Samay_Cutscene_music" DurationType="OneShot" DurationMin="30.058666" DurationMax="30.058666">
+					<MediaRefs>
+						<MediaRef Id="51487557"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="996860547" Name="Play_Spikes" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.7887863" DurationMax="1.7887863">
+					<MediaRefs>
+						<MediaRef Id="159096066"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="820821253" Name="Play_Stone_Door_Close" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="1073300278"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="224478607" Name="Play_Stone_Door_Open" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="207516780"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3943614907" Name="Play_success" DurationType="OneShot" DurationMin="3.768" DurationMax="3.768">
+					<MediaRefs>
+						<MediaRef Id="500319183"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="110520045" Name="Play_Timestop" DurationType="OneShot" DurationMin="0.9994157" DurationMax="0.9994157">
+					<MediaRefs>
+						<MediaRef Id="675182018"/>
+						<MediaRef Id="994689764"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3738480268" Name="Play_Torchfire" MaxAttenuation="5" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="780805693"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="518242827" Name="Play_Waterflow" MaxAttenuation="30" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="505168709"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3406143321" Name="Stop_CaveDrips" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1334786394" Name="Stop_FireCrackling" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2705271378" Name="Stop_Torchfire" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2135762577" Name="Stop_Waterflow" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3776642413" Name="TimeBar" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="315832172"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3776642413" Name="TimeBar"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{CEEB2FE3-24C0-4D09-89DE-BEFA5B6C8FB9}</FileHash>
+</SoundBanksInfo>
